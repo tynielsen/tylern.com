@@ -26,10 +26,10 @@ Right now, no dependencies! Chances are good that some branches will use some li
 
 ## Usage
 
-## API
+## API/JSON
 Coming Soon.
 
 ## Security
 Currently, no security is necessary.
 
-*This README will actively updated as changes are made.
+*This README will be actively updated as changes are made.
