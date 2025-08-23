@@ -1,3 +1,9 @@
+<style>
+  h1 { font-size: 3rem; }
+  h2 { text-decoration: none; }
+  h3 { font-size: 2rem; }
+  ul, ol { padding-left: 1.25rem; }
+</style>
 # TylerN.com Portfolio Website
 [![license](https://img.shields.io/github/license/:tynielsen/:repo.svg)](LICENSE)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
@@ -15,20 +21,20 @@ The home page uses tailwind.css, but everywhere else is completely custom CSS an
 
 So this will load and work without having to run or compile anything. To compile updated minified files, refer to the "Install" and "Usage" sections of this readme file.
 
-## Security
-Currently, no security is necessary.
-
 ## Install
-Right now, no dependencies! Chances are good that some branches will use some libraries and `npm install`. So the 'example' branch will follow this README as a fallback. Branch 'main' will include compiled files.
-```
-npm install // coming soon
+Right now, no dependencies! Chances are good that some branches will use some libraries and `npm install`. So the `example` branch will follow this README as a fallback. Branch `main` will include compiled files.
+```javascript
+// In terminal (CLI) run the following:
+
+// coming soon
 ```
 
-## Usage
-```
-```
+### Usage
 
-## API
+### API
 Coming Soon.
+
+### Security
+Currently, no security is necessary.
 
 *This README will actively updated as changes are made.
