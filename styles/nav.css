@@ -1,0 +1,100 @@
+/* **********************************************************
+ *
+ *  Nav, globally shared betwixt header & footer nav els
+ *
+************************************************************* */
+nav {
+  display: inline-flex;
+  justify-content: space-between;
+  
+  ul {
+
+    li {
+      display: inline-flex;
+      margin-left: 1.25rem;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      a {
+        color: var(--secondary-color);
+        /* color: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 199, 142, 0.8) 100%); */
+        display: block;
+        padding: 0.25rem 0.25rem 0 0.25rem;
+        position: relative;
+        text-transform: uppercase;
+        /* background: -webkit-linear-gradient(var(--secondary-color), var(--primary-color)); */
+        
+
+        &::after {
+          background-color: var(--primary-color);
+          height: 0.25rem;
+          border-radius: 3px;
+          bottom: 0.25rem;
+          box-shadow: 0 -1px 0.5rem 0.125rem rgba(69, 252, 90, 1);
+          content: "";
+          display: block;
+          left: 0.25rem;
+          opacity: 0;
+          position: absolute;
+          right: 0.25rem;
+          transition: all 100ms ease-in-out;
+        }
+
+        &:hover {
+          background: linear-gradient( var(--secondary-color) 30%, var(--primary-color) 100%);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          &::after {
+            opacity: 1;
+            bottom: -0.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-nav {
+
+  a {
+    color: var(--secondary-color);
+    /* color: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(255, 199, 142, 0.8) 100%); */
+    display: block;
+    padding: 0.25rem 0.25rem 0 0.25rem;
+    position: relative;
+    text-transform: uppercase;
+    /* background: -webkit-linear-gradient(var(--secondary-color), var(--primary-color)); */
+    
+
+    &::after {
+      background-color: var(--primary-color);
+      height: 2px;
+      border-radius: 2px;
+      bottom: 0.25rem;
+      box-shadow: 0 0 8px 2px rgba(69, 252, 90, 1);
+      content: "";
+      display: block;
+      left: 0.25rem;
+      opacity: 0;
+      position: absolute;
+      right: 0.25rem;
+      transition: all 100ms ease-in-out;
+    }
+
+    &:hover {
+      background: linear-gradient( var(--secondary-color) 40%, var(--primary-color) 100%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      &::after {
+        opacity: 1;
+        bottom: -0.4rem;
+      }
+    }
+  }
+}

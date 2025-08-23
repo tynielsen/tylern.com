@@ -1,0 +1,33 @@
+/* **********************************************************
+ *
+ *  Import all css files into main.css
+ *
+ *  ** DO NOT PERMANENTLY ADD CSS TO THIS FILE **
+ *      Intended use is for temporary styles
+ *
+************************************************************* */
+@import url("./styles.css");
+
+/* Variables, Functions, Mixins
+••••••••••••••••••••••••** */
+@import url("./variables.css");
+
+/* Shared Stylesheets */
+@import url("./global.css");
+@import url("./logo-slider.css");
+@import url("./typography.css");
+@import url("./nav.css");
+@import url("./header.css");
+/* @import url("./footer.css"); */
+
+
+/* Content Sections
+************************** */
+@import url("./card-neon-glass.css");
+@import url("./about.css");
+@import url("./resources.css");
+
+
+/* Responsive (Mobile First
+************************** */
+/* @import url("./desktop.css") screen and (min-width: 767px); */

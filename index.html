@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lean Web Shop. If your website could use a facelift or simply just some content updates, we're here for you. Estimates are free and we're priced competitively." />
+
+    <title>Home | Techies Habitat</title>
+
+    <!-- Using "Inter" font --> <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
+    <!-- Tailwind CSS CDN for homepage styling --> <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="js/index.js" defer></script>
+  </head>
+  <body class="">
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 bg-opacity-34 backdrop-blur-md z-10">
+      <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+
+        <a href="#" class="logo text-2xl font-bold text-sky-400">
+          Techies Habitat
+        </a>
+
+        <div class="main-nav hidden md:flex space-x-8">
+          <a href="#about" class="text-lg">About</a>
+          <a href="#projects" class="text-lg">Projects</a>
+          <a href="/resources" class="text-lg">Resources</a>
+          <a href="/contact" class="text-lg">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-button"
+          class="md:hidden text-gray-200 focus:outline-none"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </nav>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-gray-800 px-6 pb-4">
+        <a href="#about" class="block text-lg py-2 hover:text-sky-400 transition-colors">About</a>
+        <a href="#projects" class="block text-lg py-2 hover:text-sky-400 transition-colors">Projects</a>
+        <a href="/resources" class="block text-lg py-2 hover:text-sky-400 transition-colors">Resources</a>
+        <a href="/contact" class="block text-lg py-2 hover:text-sky-400 transition-colors">Contact</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <div class="glass-card-container">
+          <div class="space-y-6 card">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white">
+              Fresh. Hot. <span class="text-sky-400">Pixel-Perfect.</span>
+            </h1>
+
+            <p>You know the feeling when everything just… clicks? When users smile instead of swear; we usually hear silence in those cases. It's a great feeling when code runs so smooth it practically purrs. That's not luck. That's craft. Experience that isn't taught.</p>
+
+            <p>
+              For 15 years, I've been borderline obsessed with building and rebuilding …and rebuilding… resilient systems that just work. My passion is taking on complex challenges and turning them into the most simple-looking solutions that teams can be proud of. Along the way, helpful resources are stumbled upon, and hopefully this will help others find some valuable resources too.
+            </p>
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4 pt-6">
+              <a href="#resources" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors">
+                Favored Resources
+              </a>
+
+              <a href="#projects" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors">
+                View My Work
+              </a>
+
+              <a href="/contact" class="inline-block bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors">
+                Get in Touch
+              </a>
+            </div>
+          </div>
+
+          <div class="accents">
+            <div class="top-light"></div>
+            <div class="light"></div>
+            <div class="light sm"></div>
+          </div>
+        </div>
+        <!-- "glass-card" base designed by Fabian Albert: https://www.pinterest.com/pin/1045749975969474374/ -->
+      </section>
+
+      <!-- Hero Section -->
+      <!-- <section id="hero" class="min-h-screen flex justify-center text-center">
+        <div class="space-y-6">
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white"
+          >
+            Hi, I'm <span class="text-sky-400">Tyler Nielsen</span>.
+          </h1>
+
+          <p
+            class="text-xl md:text-2xl font-medium text-gray-400 max-w-3xl mx-auto"
+          >
+            A Senior Front-End Engineer with 14 years of experience,
+            specializing in building clean, performant, and accessible digital
+            content using HTML, CSS, and JavaScript.
+          </p>
+
+          <div class="flex flex-col sm:flex-row justify-center gap-4 pt-6">
+            <a
+              href="#projects"
+              class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors"
+            >
+              View My Work
+            </a>
+
+            <a
+              href="/contact"
+              class="inline-block bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors"
+            >
+              Get in Touch
+            </a>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- About Section -->
+      <section id="about" class="">
+        <div class="mx-auto grid md:grid-cols-2 gap-12">
+          <div class="order-2 md:order-1 space-y-6">
+            <h2 class="text-3xl md:text-4xl font-bold">
+              About The Dev
+            </h2>
+
+            <h3 class="text-2xl font-bold">
+              15 Years Crafting the Web
+            </h3>
+
+            <p class="leading-relaxed">When interfaces are snappy and responsive and flow like water, when users smile instead of swear, when code runs so smooth it practically purrs? That's not luck. That's craft.</p>
+
+            <p class="leading-relaxed">
+              With over a 14 years of hands-on experience, I've had the privilege
+              of contributing to a wide range of diverse projects, from large-scale
+              enterprise applications to small, bespoke digital content. My passion
+              lies in turning complex projects into simple, elegant, and
+              maintainable solutions.
+            </p>
+
+            <p class="leading-relaxed">
+              As a wellknown advocate for accessibility, performance, and web standards
+              I thrive in collaborative environments while learning continuously
+              to stay on the cutting edge of front-end development.
+            </p>
+
+            <a
+              href="about.html"
+              class="mt-6 inline-block text-sky-400 font-bold hover:underline transition-colors"
+              >Check Out My Full Portfolio &rarr;</a
+            >
+          </div>
+
+          <div class="order-1 md:order-2">
+            <img
+              src="https://placehold.co/400x400/1f2937/d1d5db?text=Your+Photo"
+              alt="A professional headshot of the developer."
+              class="rounded-xl w-full h-auto object-cover shadow-2xl"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- END of About Section -->
+
+      <!-- Projects Section -->
+      <section id="projects" class="">
+        <h2 class="text-3xl md:text-4xl font-bold text-center">
+          Featured Projects
+        </h2>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          <!-- Project Card 1 -->
+          <a
+            href="/projects/project-1"
+            class="project-card block bg-gray-800 rounded-xl p-6 shadow-xl border border-gray-700"
+          >
+            <img
+              src="https://placehold.co/600x400/374151/9ca3af?text=Project+1"
+              alt="Screenshot of Project 1"
+              class="rounded-lg mb-4 w-full h-auto object-cover"
+            />
+            <h3 class="text-xl font-bold text-white mb-2">Project Title One</h3>
+            <p class="text-gray-400 text-sm mb-4">
+              Developed a responsive single-page application using React and
+              Tailwind CSS.
+            </p>
+            <span class="inline-block text-sky-400 font-medium hover:underline"
+              >View Project &rarr;</span
+            >
+          </a>
+
+          <!-- Project Card 2 -->
+          <a
+            href="/projects/project-2"
+            class="project-card block bg-gray-800 rounded-xl p-6 shadow-xl border border-gray-700"
+          >
+            <img
+              src="https://placehold.co/600x400/374151/9ca3af?text=Project+2"
+              alt="Screenshot of Project 2"
+              class="rounded-lg mb-4 w-full h-auto object-cover"
+            />
+            <h3 class="text-xl font-bold text-white mb-2">Project Title Two</h3>
+            <p class="text-gray-400 text-sm mb-4">
+              Led the front-end implementation for a content management system,
+              focusing on accessibility.
+            </p>
+            <span class="inline-block text-sky-400 font-medium hover:underline">View Project &rarr;</span>
+          </a>
+
+          <!-- Project Card 3 -->
+          <a
+            href="/projects/project-3"
+            class="project-card block bg-gray-800 rounded-xl p-6 shadow-xl border border-gray-700"
+          >
+            <img
+              src="https://placehold.co/600x400/374151/9ca3af?text=Project+3"
+              alt="Screenshot of Project 3"
+              class="rounded-lg mb-4 w-full h-auto object-cover"
+            />
+            <h3 class="text-xl font-bold text-white mb-2">
+              Project Title Three
+            </h3>
+            <p class="text-gray-400 text-sm mb-4">
+              Optimized an existing legacy website, improving page load times by
+              over 50%.
+            </p>
+            <span class="inline-block text-sky-400 font-medium hover:underline">View Project &rarr;</span>
+          </a>
+        </div>
+
+        <div class="text-center mt-12">
+          <a
+            href="/projects"
+            class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors"
+          >
+            View All Projects
+          </a>
+        </div>
+      </section>
+
+      <section id="resources">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+          Resources
+        </h2>
+
+        <p>I've collected a few resources over the years, and here's a curated list.</p>
+
+        <ul class="resource-links">
+          <li>
+            <a href="https://tinywow.com/" target="_blank">TinyWow.com</a>
+            <p>This website packs a serious punch; it provides a lot. And I mean a <em>lot</em></p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="skill-tech-stack">
+        <h4>Tech-Stack</h4>
+        <p>
+          Just a few technologies, programming languages, libraries, frameworks,
+          etc. I'm familiar with and use on a daily basis (I highly recommend,
+          if you'd prefer to go at it on your own).
+        </p>
+
+        <div class="animated-logo-slider">
+          <ul>
+            <li>
+              <img
+                src="./images/icons/icon-javascript.svg"
+                alt="JavaScript"
+                title="JavaScript"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-html5.svg"
+                alt="HTML5"
+                title="HTML5"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-css3.svg"
+                alt="CSS 3"
+                title="CSS3"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-sass.svg"
+                alt="Sass"
+                title="Sass CSS"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-json.svg"
+                alt="JSON"
+                title="JSON"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-git.svg"
+                alt="git"
+                title="git"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-github.svg"
+                alt="GitHub"
+                title="GitHub"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-jira.svg"
+                alt="Jira"
+                title="Jira"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-typescript.svg"
+                alt="TypeScript"
+                title="TypeScript"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-jquery.svg"
+                alt="jQuery"
+                title="jQuery"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-adobe.svg"
+                alt="Adobe"
+                title="Adobe"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-atlassian.svg"
+                alt="Atlassian"
+                title="Atlassian"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-confluence.svg"
+                alt="Confluence"
+                title="Confluence"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-react.svg"
+                alt="React JS"
+                title="React JS"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-angular.svg"
+                alt="Angular"
+                title="Angular"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-eslint.svg"
+                alt="ESLint"
+                title="ESLint"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-wordpress.svg"
+                alt="WordPress"
+                title="WordPress"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-jest.svg"
+                alt="Jest"
+                title="Jest"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-material-ui.svg"
+                alt="Material UI"
+                title="Material UI"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-nodejs.svg"
+                alt="Node JS"
+                title="Node JS"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-npm.svg"
+                alt="NPM"
+                title="NPM"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-php.svg"
+                alt="PHP"
+                title="PHP"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-prettier.svg"
+                alt="Prettier"
+                title="Prettier"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-redux.svg"
+                alt="Redux"
+                title="Redux"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-grunt.svg"
+                alt="Grunt"
+                title="Grunt"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-vercel.svg"
+                alt="Vercel"
+                title="Vercel"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-bitbucket.svg"
+                alt="BitBucket"
+                title="BitBucket"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-less.svg"
+                alt="Less CSS"
+                title="Less CSS"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-nextjs.svg"
+                alt="Next JS"
+                title="Next JS"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-nx.svg"
+                alt="NX"
+                title="NX"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-planet-scale.svg"
+                alt="Planet Scale"
+                title="Planet Scale"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-prisma.svg"
+                alt="Prisma"
+                title="Prisma"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-vuejs.svg"
+                alt="Vue JS"
+                title="Vue JS"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-vscode.svg"
+                alt="Visual Studio Code"
+                title="Visual Studio(VS) Code"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-sublime-text.svg"
+                alt="Sublime Text"
+                title="Sublime Text"
+              />
+            </li>
+            <li>
+              <img
+                src="./images/icons/icon-bootstrap.svg"
+                alt="Bootstrap"
+                title="Bootstrap"
+              />
+            </li>
+            <li>
+              <img
+                alt="Tailwind CSS"
+                src="./images/icons/icon-tailwind-css.svg"
+                title="Tailwind CSS"
+              />
+            </li>
+            <li>
+              <img
+                alt="T3-Stack - TypeScript, tRPC, Tailwind, Next.js"
+                src="./images/icons/icon-t3.svg"
+                title="T3-Stack: TypeScript, Tailwind, tRPC, Next.js"
+              />
+            </li>
+          </ul>
+        </div>
+
+        <p>
+          <a href="mailto:tynielsen@gmail.com">Let's build.</a>
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-center py-8 px-6 mt-12">
+      <p class="text-gray-400 copyright">
+        &copy; <span id="c-yr"></span> Tyler Nielsen. All Rights Reserved.
+      </p>
+
+      <div class="flex justify-center space-x-6 mt-4">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-gray-400 hover:text-sky-400 transition-colors">
+          <svg
+            class="w-6 h-6"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/yourprofile" target="_blank" class="text-gray-400 hover:text-sky-400 transition-colors">
+          <svg
+            class="w-6 h-6"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.468-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.614.8.575 4.767-1.589 8.205-6.085 8.205-11.385 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+        <!-- You can add more social links here -->
+      </div>
+    </footer>
+
+    <!-- <script defer>
+    document.addEventListener("DOMContentLoaded", () => {
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    });
+    </script> -->
+  </body>
+</html>

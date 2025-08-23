@@ -1,0 +1,16 @@
+/* **********************************************************
+ *
+ *  Footer element
+ *
+************************************************************* */
+footer {
+  width: 1200px;
+  margin: 8rem auto 2rem;
+
+  nav {
+    margin-top: 4rem;
+    ul {
+      justify-content: right;
+    }
+  }
+}

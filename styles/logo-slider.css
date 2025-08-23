@@ -1,0 +1,66 @@
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––————————————————
+  @Section: Animated Logo Slider / Carousel
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––————————————— */
+
+/* Animated Logo Slider */
+.animated-logo-slider {
+  /* background-color: rgba(255, 255, 255, 0.25); */
+  background-color: #e5e7eb;
+  box-shadow: 0 0 12px 6px #e5e7eb;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  padding: 1rem 0;
+  position: relative;
+  white-space: nowrap;
+  margin: 2.5rem auto;
+
+  &::before,
+  &::after {
+    bottom: 0;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 8rem;
+    z-index: 2;
+  }
+
+  &::before {
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 199, 142, 0.8) 95%, rgba(255, 255, 255, 1) 100%);
+    left: 0;
+  }
+
+  &::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 199, 142, 0.8) 95%, rgba(255, 255, 255, 1) 100%);
+    right: 0;
+  }
+
+  ul {
+    animation: 45s slide infinite linear;
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    li {
+      display: inline-block;
+      margin: 0 1.5rem;
+
+      img {
+        height: 4rem;
+      }
+    }
+  }
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
