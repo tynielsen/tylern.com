@@ -32,4 +32,4 @@ Coming Soon.
 ## Security
 Currently, no security is necessary.
 
-*This README will be actively updated as changes are made.
+*This README will actively be updated as changes are made.
