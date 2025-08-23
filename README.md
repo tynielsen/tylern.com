@@ -1,10 +1,5 @@
-# TylerN.com Website Code
-## All open sourse and pretty for all to use.
+# TylerN.com Portfolio Website
 
-![banner]()
-
-![badge]()
-![badge]()
 [![license](https://img.shields.io/github/license/:tynielsen/:repo.svg)](LICENSE)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
@@ -15,67 +10,27 @@ Key Takeaways:
 - Vanilla JavaScript
 - File compression coming soon (minified files, intended more as an intro to compilers)
 
-TylerN.com is my own custom CI/CD work-in-progress. It serves as my portfolio website, but the idea is for it to become something that anyone can use. So! Feel free to poke around and if you see something you like, help yourself and enjoy.
+TylerN.com follows CI/CD and is a work in progress. It serves as my portfolio website, but the idea is for it to become something that anyone can draw from. I'll decide how best to handle content that only I need. Maybe JSON.
 
-It uses tailwind.css on the home page and completely custom CSS and Vanilla JavaScript everywhere else. No framework, no additional libraries outside of what browsers provide. The home page is the only exception, regarding CSS.
+The home page uses tailwind.css, but everywhere else is completely custom CSS and Vanilla JavaScript. No frameworks, libraries, or dependencies outside of what browsers provide. The home page is the only exception, regarding CSS.
 
-This README is also under construction and will be updated as changes are made. This is a CI/CD example as well.
-
-## Table of Contents
-
-- [Built](#security)
-- [Background](#background)
-- [Install](#install)
-- [Usage](#usage)
-- [API](#api)
-- [Contributing](#contributing)
-- [License](#license)
+So this will load and work without having to run or compile anything. To compile updated minified files, refer to the "Install" and "Usage" sections of this readme file.
 
 ## Security
 Currently, no security is necessary.
 
-### Any optional sections
-
-
-## Background
-
-
-### Any optional sections
-
 ## Install
-This will most likely end up relying on some libraries and will use `npm install`
-This module depends upon a knowledge of [Markdown]().
+Right now, no dependencies! Chances are good that some branches will use some libraries and `npm install`. So the 'example' branch will follow this README as a fallback. Branch 'main' will include compiled files.
 
 ```
 ```
-
-### Any optional sections
 
 ## Usage
 
 ```
 ```
 
-Note: The `license` badge image link at the top of this file should be updated with the correct `:user` and `:repo`.
-
-### Any optional sections
-
 ## API
+Coming Soon.
 
-### Any optional sections
-
-## More optional sections
-
-## Contributing
-
-See [the contributing file](CONTRIBUTING.md)!
-
-PRs accepted.
-
-Small note: If editing the Readme, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
-
-### Any optional sections
-
-## License
-
-[MIT © Richard McRichface.](../LICENSE)
+*This README will actively updated as changes are made.
