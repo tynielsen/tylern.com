@@ -1,5 +1,4 @@
 # TylerN.com Portfolio Website
-
 [![license](https://img.shields.io/github/license/:tynielsen/:repo.svg)](LICENSE)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
@@ -21,12 +20,11 @@ Currently, no security is necessary.
 
 ## Install
 Right now, no dependencies! Chances are good that some branches will use some libraries and `npm install`. So the 'example' branch will follow this README as a fallback. Branch 'main' will include compiled files.
-
 ```
+npm install // coming soon
 ```
 
 ## Usage
-
 ```
 ```
 
