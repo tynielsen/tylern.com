@@ -1,33 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Lean Web Shop. If your website could use a facelift or simply just some content updates, we're here for you. Estimates are free and we're priced competitively." />
 
-    <title>Home | Techies Habitat</title>
+    <title>Tyler N || Home</title>
 
     <!-- Using "Inter" font --> <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" />
     <!-- Tailwind CSS CDN for homepage styling --> <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="styles/reset.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-    <script src="js/index.js" defer></script>
+    <!-- <link href="styles/reset.css" rel="stylesheet" /> -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="styles/main.css" rel="stylesheet" />
+    <script type="module" src="js/index.js" defer></script>
   </head>
-  <body class="">
-    <!-- Header & Navigation -->
-    <header class="sticky top-0 bg-opacity-34 backdrop-blur-md z-10">
-      <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+  <body>
+    
+    <header class="bg-opacity-34 backdrop-blur-md"> <!-- Header & Navigation -->
+      <nav class="container py-4 px-6">
 
-        <a href="#" class="logo text-2xl font-bold text-sky-400">
-          Techies Habitat
+        <a href="#" class="logo text-2xl">
+          T is for Techies
         </a>
 
         <div class="main-nav hidden md:flex space-x-8">
+          <a href="#hero" class="text-lg">Top</a>
           <a href="#about" class="text-lg">About</a>
           <a href="#projects" class="text-lg">Projects</a>
-          <a href="/resources" class="text-lg">Resources</a>
-          <a href="/contact" class="text-lg">Contact</a>
+          <a href="#resources" class="text-lg">Resources</a>
+          <a href="#contact" class="text-lg">Contact</a>
         </div>
 
         <!-- Mobile Menu Button -->
@@ -53,54 +55,41 @@
       </nav>
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="hidden md:hidden bg-gray-800 px-6 pb-4">
+        <a href="#hero" class="block text-lg py-2 hover:text-sky-400 transition-colors">Top</a>
         <a href="#about" class="block text-lg py-2 hover:text-sky-400 transition-colors">About</a>
         <a href="#projects" class="block text-lg py-2 hover:text-sky-400 transition-colors">Projects</a>
-        <a href="/resources" class="block text-lg py-2 hover:text-sky-400 transition-colors">Resources</a>
-        <a href="/contact" class="block text-lg py-2 hover:text-sky-400 transition-colors">Contact</a>
+        <a href="#resources" class="block text-lg py-2 hover:text-sky-400 transition-colors">Resources</a>
+        <a href="#contact" class="block text-lg py-2 hover:text-sky-400 transition-colors">Contact</a>
       </div>
     </header>
+    <!-- END Header & Navigation -->
 
-    <main>
-      <section id="about">
-        <div class="glass-card-container">
-          <div class="space-y-6 card">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white">
-              Fresh. Hot. <span class="text-sky-400">Pixel-Perfect.</span>
-            </h1>
+    <form action="" class="theme-picker">
+      <fieldset>
+        <legend class="visually-hidden">Pick a Theme</legend>
 
-            <p>You know the feeling when everything just… clicks? When users smile instead of swear; we usually hear silence in those cases. It's a great feeling when code runs so smooth it practically purrs. That's not luck. That's craft. Experience that isn't taught.</p>
+        <label for="default" class="visually-hidden radio-label default-radio-btn">Default (Light)</label>
+        <input type="radio" name="theme" id="default" title="Default Theme" checked>
 
-            <p>
-              For 15 years, I've been borderline obsessed with building and rebuilding …and rebuilding… resilient systems that just work. My passion is taking on complex challenges and turning them into the most simple-looking solutions that teams can be proud of. Along the way, helpful resources are stumbled upon, and hopefully this will help others find some valuable resources too.
-            </p>
+        <label for="pink" class="visually-hidden radio-label pink-radio-btn">80's Neon Pink</label>
+        <input type="radio" name="theme" id="pink" title="Pink Theme">
 
-            <div class="flex flex-col sm:flex-row justify-center gap-4 pt-6">
-              <a href="#resources" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors">
-                Favored Resources
-              </a>
+        <label for="blue" class="visually-hidden radio-label blue-radio-btn">Blue</label>
+        <input type="radio" name="theme" id="blue" title="Blue Theme">
 
-              <a href="#projects" class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors">
-                View My Work
-              </a>
+        <label for="green" class="visually-hidden radio-label green-radio-btn">Green</label>
+        <input type="radio" name="theme" id="green" title="Green Theme">
 
-              <a href="/contact" class="inline-block bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors">
-                Get in Touch
-              </a>
-            </div>
-          </div>
+        <label for="orange" class="visually-hidden radio-label orange-radio-btn">Orange</label>
+        <input type="radio" name="theme" id="orange" title="Orange Theme">
+      </fieldset>
+    </form>
 
-          <div class="accents">
-            <div class="top-light"></div>
-            <div class="light"></div>
-            <div class="light sm"></div>
-          </div>
-        </div>
-        <!-- "glass-card" base designed by Fabian Albert: https://www.pinterest.com/pin/1045749975969474374/ -->
-      </section>
+    <main> <!-- Main Content -->
 
       <!-- Hero Section -->
-      <!-- <section id="hero" class="min-h-screen flex justify-center text-center">
-        <div class="space-y-6">
+      <!-- <section id="hero" class="min-h-screen flex justify-center text-center"> --> <!-- Hero Section START -->
+      <!-- <div class="space-y-6">
           <h1
             class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white"
           >
@@ -132,21 +121,66 @@
           </div>
         </div>
       </section> -->
+      <!-- END Hero Section -->
+      
 
-      <!-- About Section -->
-      <section id="about" class="">
+      <section id="hero"> <!-- About Website Section -->
+        <div class="glass-card-container">
+          <div class="space-y-6 card">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white">
+              Fresh. Hot. <span class="">Pixel-Perfect.</span>
+            </h1>
+            <p>
+              You know the feeling when everything just… clicks? When users smile instead of 
+              swear; we usually hear silence in those cases. It's a great feeling when code 
+              runs so smooth it practically purrs. That's not luck. Nor is it something to be 
+              memorized or read in a classroom. That's craftwork that was learned; a lesson 
+              learned through effort, aka., wisdom and experience.
+            </p>
+            <p>
+              For 15 years, I've been obsessed with building and rebuilding …and rebuilding… 
+              resilient systems that just work. My passion is taking on complex challenges 
+              and turning them into the most simple-looking solutions that teams can be 
+              proud of. Along the way, helpful resources are stumbled upon, and hopefully 
+              this will help others find some valuable resources too.
+            </p>
+
+            <div class="button-container flex flex-col sm:flex-row justify-center gap-4 pt-6">
+              <a href="#resources" class="inline-block font-bold py-3 px-8 rounded-full shadow-lg transition-colors">
+                Online Resources
+              </a>
+
+              <a href="#projects" class="inline-block font-bold py-3 px-8 rounded-full shadow-lg transition-colors">
+                Review Projects
+              </a>
+
+              <a href="contact" class="inline-block font-bold py-3 px-8 rounded-full shadow-lg transition-colors">
+                Get in Touch
+              </a>
+            </div>
+          </div>
+
+          <div class="accents"> <!-- "glass-card" base designed by Fabian Albert: https://www.pinterest.com/pin/1045749975969474374/ -->
+            <div class="top-light"></div>
+            <div class="light"></div>
+            <div class="light sm"></div>
+          </div>
+        </div> <!-- END:</.glass-card-container> -->
+      </section>
+      <!-- END About Website Section -->
+
+
+      <section id="about" class=""> <!-- About The Developer Section START -->
         <div class="mx-auto grid md:grid-cols-2 gap-12">
           <div class="order-2 md:order-1 space-y-6">
-            <h2 class="text-3xl md:text-4xl font-bold">
-              About The Dev
-            </h2>
+            <h2>About</h2>
+            <h3>~15 Years Developing &amp; Crafting the Web</h3>
 
-            <h3 class="text-2xl font-bold">
-              15 Years Crafting the Web
-            </h3>
-
-            <p class="leading-relaxed">When interfaces are snappy and responsive and flow like water, when users smile instead of swear, when code runs so smooth it practically purrs? That's not luck. That's craft.</p>
-
+            <p class="leading-relaxed">
+              When interfaces are snappy and responsive and flow like water …when 
+              users smile instead of swear, and when code runs so smooth it practically 
+              purrs? That isn't luck. It's a skill that must be learned.
+            </p>
             <p class="leading-relaxed">
               With over a 14 years of hands-on experience, I've had the privilege
               of contributing to a wide range of diverse projects, from large-scale
@@ -154,39 +188,38 @@
               lies in turning complex projects into simple, elegant, and
               maintainable solutions.
             </p>
-
             <p class="leading-relaxed">
-              As a wellknown advocate for accessibility, performance, and web standards
-              I thrive in collaborative environments while learning continuously
-              to stay on the cutting edge of front-end development.
+              As a wellknown advocate for responsive design, WCAG Accessibility, best coding practices and standards, and agile methodologies,
+              I thrive in collaborative environments whilst able to continue learning, resulting in me staying on the cutting edge of front-end development.
             </p>
 
             <a
               href="about.html"
-              class="mt-6 inline-block text-sky-400 font-bold hover:underline transition-colors"
-              >Check Out My Full Portfolio &rarr;</a
-            >
+              class="mt-6 inline-block transition-colors"
+              >
+              Check Out My Full Portfolio<span class="animarrow">&rarr;</span>
+            </a>
           </div>
 
           <div class="order-1 md:order-2">
             <img
-              src="https://placehold.co/400x400/1f2937/d1d5db?text=Your+Photo"
-              alt="A professional headshot of the developer."
+              src="https://www.placecats.com/476/475"
+              alt="A professional head shot of the developer, Tyler Nielsen …'s cat (not me, for now)."
+              title="A professional head shot of the developer, Tyler Nielsen …'s cat (not me, for now)."
               class="rounded-xl w-full h-auto object-cover shadow-2xl"
             />
           </div>
         </div>
-      </section>
-      <!-- END of About Section -->
+      </section> <!-- END About The Developer Section -->
 
-      <!-- Projects Section -->
-      <section id="projects" class="">
-        <h2 class="text-3xl md:text-4xl font-bold text-center">
-          Featured Projects
+      
+      <section id="portfolio"> <!-- Portfolio Section START -->
+        <h2>
+          Featured Portfolio Projects
         </h2>
 
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-          <!-- Project Card 1 -->
+          <!-- 1st Featured Portfolio Project -->
           <a
             href="/projects/project-1"
             class="project-card block bg-gray-800 rounded-xl p-6 shadow-xl border border-gray-700"
@@ -196,17 +229,19 @@
               alt="Screenshot of Project 1"
               class="rounded-lg mb-4 w-full h-auto object-cover"
             />
-            <h3 class="text-xl font-bold text-white mb-2">Project Title One</h3>
+            <h3 class="text-white mb-2">
+              Project Title One
+            </h3>
             <p class="text-gray-400 text-sm mb-4">
               Developed a responsive single-page application using React and
               Tailwind CSS.
             </p>
-            <span class="inline-block text-sky-400 font-medium hover:underline"
-              >View Project &rarr;</span
-            >
+            <span class="vlink inline-block hover:underline">
+              View Project &rarr;
+            </span>
           </a>
 
-          <!-- Project Card 2 -->
+          <!-- 2nd Featured Portfolio Project -->
           <a
             href="/projects/project-2"
             class="project-card block bg-gray-800 rounded-xl p-6 shadow-xl border border-gray-700"
@@ -216,15 +251,19 @@
               alt="Screenshot of Project 2"
               class="rounded-lg mb-4 w-full h-auto object-cover"
             />
-            <h3 class="text-xl font-bold text-white mb-2">Project Title Two</h3>
+            <h3 class="text-white mb-2">
+              Project Title Two
+            </h3>
             <p class="text-gray-400 text-sm mb-4">
               Led the front-end implementation for a content management system,
               focusing on accessibility.
             </p>
-            <span class="inline-block text-sky-400 font-medium hover:underline">View Project &rarr;</span>
+            <span class="vlink inline-block hover:underline">
+              View Project &rarr;
+            </span>
           </a>
 
-          <!-- Project Card 3 -->
+          <!-- 3rd Featured Portfolio Project -->
           <a
             href="/projects/project-3"
             class="project-card block bg-gray-800 rounded-xl p-6 shadow-xl border border-gray-700"
@@ -234,14 +273,16 @@
               alt="Screenshot of Project 3"
               class="rounded-lg mb-4 w-full h-auto object-cover"
             />
-            <h3 class="text-xl font-bold text-white mb-2">
-              Project Title Three
+            <h3 class="text-white mb-2">
+              Portfolio Title Three
             </h3>
             <p class="text-gray-400 text-sm mb-4">
               Optimized an existing legacy website, improving page load times by
               over 50%.
             </p>
-            <span class="inline-block text-sky-400 font-medium hover:underline">View Project &rarr;</span>
+            <span class="vlink inline-block hover:underline">
+              View Project &rarr;
+            </span>
           </a>
         </div>
 
@@ -250,26 +291,35 @@
             href="/projects"
             class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors"
           >
-            View All Projects
+            View All Portfolio Projects
           </a>
         </div>
+      </section> <!-- END Portfolio Section -->
+
+      <section id="resources" class="resource-links"> <!-- Resources Section START -->
+        <div class="glass-card-container">
+          <div class="space-y-6 card">
+            <h2 class="text-white">
+              Resources
+            </h2>
+
+            <p>Here's a curated selection of resources (mostly open source or free) I've collected over the years. Feel free to use these, and also to submit additional resources that I missed!</p>
+
+            <ul id="loop"></ul> <!-- Auto-populated with a list of resource links from /data/resources-list.json -->
+              
+            <p>These sites pack a serious punch; it provides a lot helpful - and I mean a <em>lot</em> of helpful information. Know of any good ones that I've missed? Send me an email!</p>
+          </div>
+        </div> <!-- END:</.glass-card-container> -->
+
+        <div class="accents"> <!-- "glass-card" base designed by Fabian Albert: https://www.pinterest.com/pin/1045749975969474374/ -->
+          <div class="top-light"></div>
+          <div class="light"></div>
+          <div class="light sm"></div>
+        </div>
       </section>
+      <!-- END Resources Section -->
 
-      <section id="resources">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
-          Resources
-        </h2>
-
-        <p>I've collected a few resources over the years, and here's a curated list.</p>
-
-        <ul class="resource-links">
-          <li>
-            <a href="https://tinywow.com/" target="_blank">TinyWow.com</a>
-            <p>This website packs a serious punch; it provides a lot. And I mean a <em>lot</em></p>
-          </li>
-        </ul>
-      </section>
-
+      <!-- Skill Tech Stack Section -->
       <section id="skill-tech-stack">
         <h4>Tech-Stack</h4>
         <p>
@@ -553,6 +603,45 @@
           <a href="mailto:tynielsen@gmail.com">Let's build.</a>
         </p>
       </section>
+      <!-- END Skill Tech Stack Section -->
+
+
+      <section id="contact" class="resource-links"> <!-- Resources Section START -->
+        <div class="glass-card-container">
+          <div class="space-y-6 card">
+            <h2 class="text-white">Contact</h2>
+            
+            <form action="">
+              <legend>
+                <div class="name-input">
+                  <label for="full-name">Full Name</label>
+                  <input type="text" name="contact-form" id="full-name" placeholder="Full Name">
+                </div>
+
+                <div class="subject-input">
+                  <label for="subject">Subject</label>
+                  <input type="text" name="contact-form" id="subject" placeholder="Like To Discuss Some Consulting and Development Work From You">
+                </div>
+
+                <div class="msg-input">
+                  <label for="message">Message</label>
+                  <textarea name="contact-form" id="message" placeholder="Hi! We'd LOVE to have you help build our custom website with us. We have a team but they're shorthanded as it is and could use help with the current load. Can you come in, take a look at the project, offer up some consultation and help get this project back on track please?"></textarea>
+                </div>
+
+                <div class="submit-btn">
+                  <button>Submit</button>
+                </div>
+              </legend>
+            </form>
+          </div>
+        </div>
+
+        <div class="accents"> <!-- "glass-card" base designed by Fabian Albert: https://www.pinterest.com/pin/1045749975969474374/ -->
+          <div class="top-light"></div>
+          <div class="light"></div>
+          <div class="light sm"></div>
+        </div>
+      </section> <!-- END Contact Section -->
     </main>
 
     <!-- Footer -->
@@ -585,6 +674,7 @@
         <!-- You can add more social links here -->
       </div>
     </footer>
+    <!-- END Footer -->
 
     <!-- <script defer>
     document.addEventListener("DOMContentLoaded", () => {

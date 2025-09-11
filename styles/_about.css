@@ -1,0 +1,29 @@
+/* **********************************************************
+ *
+ *  About Section and Page
+ *
+************************************************************* */
+section#about {
+
+  a {
+    color: var(--secondary-text-color);
+    font-weight: 700;
+
+    span.animarrow {
+      display: inline-block;
+      padding-left: 2px;
+      text-decoration: none;
+      transition: all ease-in-out 0.1s;
+    }
+
+    &:hover {
+      text-decoration: underline;
+
+      span.animarrow {
+        transition: all ease-in-out 0.1s;
+        padding-left: 16px;
+        text-decoration: none;
+      }
+    }
+  }
+}

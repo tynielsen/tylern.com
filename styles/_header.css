@@ -1,0 +1,28 @@
+/* **********************************************************
+ *
+ *  Header element
+ *
+************************************************************* */
+header {
+  background: rgba(105, 105, 105, 0.67);
+  background-image: blur(8px);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  nav.container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    /* border-bottom: 1px solid var(--white-alt-6); */
+    /* background: linear-gradient(180deg, #292929aa 0%, #191919cc 50%); */
+  }
+}
+
+.logo {
+  color: var(--alt-text-color);
+  font-weight: bold;
+}

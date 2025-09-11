@@ -4,9 +4,9 @@
 
 /* Animated Logo Slider */
 .animated-logo-slider {
-  /* background-color: rgba(255, 255, 255, 0.25); */
-  background-color: #e5e7eb;
-  box-shadow: 0 0 12px 6px #e5e7eb;
+  background-color: rgba(255, 255, 255, 0.25);
+  /* background-color: #e5e7eb; */
+  /* box-shadow: 0 0 12px 6px #e5e7eb; */
   border-radius: 1.25rem;
   overflow: hidden;
   padding: 1rem 0;

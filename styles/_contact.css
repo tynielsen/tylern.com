@@ -1,0 +1,80 @@
+/* **********************************************************
+ *
+ *  Contact Section and Page
+ *
+************************************************************* */
+section#contact {
+  position: relative;
+
+  form {
+    background-color: var(--secondary-text-color-rgb);
+    border: 0.125rem solid var(--secondary-text-color);
+    border-radius: 0.5rem;
+    padding: 1.5rem 2.5rem;
+
+    legend {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      div {
+        display: inline-flex;
+        flex-direction: column;
+        width: 47.5%;
+
+        &.msg-input {
+          width: 100%;
+        }
+      }
+    
+      label,
+      input {
+        color: var(--black-alt-3);
+        flex-grow: 1;
+      }
+
+      textarea {
+        flex-grow: 2;
+        flex-basis: 100%;
+      }
+
+      label {
+        color: var(--secondary-text-color);
+        font-weight: bold;
+        margin-bottom: 10px;
+
+        & + input {
+          margin-bottom: 25px;
+        }
+      }
+
+      input,
+      textarea {
+        padding: 3px 10px;
+        margin-top: 0.25rem;
+      }
+
+      textarea {
+        min-height: 5.5rem; /* 88px */
+      }
+    }
+  }
+
+  .card {
+    box-shadow: inset 0 2px 2px 0 #7eff7eba, inset 0 -2px 2px 0 #0003;
+  }
+
+  .accents .top-light {
+    background: #06df06;
+    /* Green, Pink, Blue, Orange */
+    box-shadow: 
+      0 0px 1px 1px #7eff7eba,
+      0 1px 2px 1px #41ff41bb,
+      0 2px 6px 1px #0eda0e77,
+      0 4px 12px 0px #07a107bc,
+      0 12px 20px 12px #07a10799 !important;
+  }
+}
+

@@ -1,0 +1,65 @@
+/* **********************************************************
+ *
+ *  Themes
+ *
+************************************************************* */
+:root:has(#default:checked) {
+  --bg-color: var(--black-alt-1);
+  --text-color: var(--primary-text-color);
+  --alt-text-color: var(--blue);
+  --secondary-text-color: var(--blue);
+
+  --main-accent-color: var(--blue-bg-color-rgb);
+}
+
+:root:has(#pink:checked) {
+  --bg-color: hsla(330, 100%, 8%, 1);
+  --text-color: var(--primary-text-color);
+  --alt-text-color: var(--hot-pink);
+  --secondary-text-color: var(--blue);
+
+  --main-accent-color: var(--blue-bg-color-rgb);
+
+  /* --card-bg-color: hsl(310 50% 100%); */
+  /* --text-color: hsl(310 50% 15%); */
+  /* --heading-color: hsl(309, 33%, 16%); */
+}
+
+:root:has(#blue:checked) {
+  --bg-color: hsla(199, 89%, 8%, 1);
+  --text-color: var(--primary-text-color);
+  --alt-text-color: var(--blue);
+  --secondary-text-color: var(--hot-pink);
+
+  --main-accent-color: var(--pink-bg-color-rgb);
+  
+  /* --bg-color: var(--dark-teal); */
+  /* --body-bg-color: hsl(209 50% 90%); */
+  /* --card-bg-color: hsl(209 50% 100%); */
+  /* --heading-color: hsl(209 50% 25%); */
+}
+
+:root:has(#green:checked) {
+  --bg-color: hsla(120, 100%, 8%, 1);
+  --text-color: var(--primary-text-color);
+  --alt-text-color: var(--green);
+  --secondary-text-color: var(--orange);
+
+  --main-accent-color: var(--orange-bg-color-rgb);
+
+  /* --body-bg-color: hsl(209 50% 90%); */
+  /* --card-bg-color: hsl(209 50% 100%); */
+  /* --heading-color: hsl(209 50% 25%); */
+}
+
+:root:has(#orange:checked) {
+  /* --bg-color: rgb(108, 59, 3); */
+  --dark-oj: rgb(190, 85, 0);
+  --bg-color: rgb(140, 45, 0);
+  --text-color: var(--primary-text-color);
+  --alt-text-color: var(--orange);
+  --secondary-text-color: var(--green);
+  --secondary-text-color-rgb: rgba(0, 255, 0, 0.12);
+  --main-accent-color: var(--green-bg-color-rgb);
+  /* hsl(from var(--secondary-text-color) h s calc(l + 16)); */
+}

@@ -1,0 +1,56 @@
+{
+  "resources": [
+    {
+      "name": "Tiny Wow",
+      "url": "https://tinywow.com/"
+    },
+    {
+      "name": "CSS Tricks",
+      "url": "https://css-tricks.com/"
+    },
+    {
+      "name": "edX",
+      "url": "https://www.edx.org/"
+    },
+    {
+      "name": "The Odin Project",
+      "url": "https://www.theodinproject.com/"
+    },
+    {
+      "name": "Free Code Camp",
+      "url": "https://www.freecodecamp.org/"
+    },
+    {
+      "name": "Learn-JS",
+      "url": "https://learn-js.org/"
+    },
+    {
+      "name": "The Modern JS Tutorial",
+      "url": "https://javascript.info/"
+    },
+    {
+      "name": "JavaScript Roadmap",
+      "url": "https://roadmap.sh/javascript"
+    },
+    {
+      "name": "React.JS",
+      "url": "https://react.dev/learn"
+    },
+    {
+      "name": "TypeScript w/React.JS",
+      "url": "https://www.freecodecamp.org/news/learn-typescript-with-react-handbook/"
+    },
+    {
+      "name": "Vue.JS",
+      "url": "https://www.freecodecamp.org/news/build-a-portfolio-with-vuejs/"
+    },
+    {
+      "name": "HTML",
+      "url": "https://html.com/"
+    },
+    {
+      "name": "REST API Tutorial",
+      "url": "https://restapitutorial.com/"
+    }
+  ]
+}

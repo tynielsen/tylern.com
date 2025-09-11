@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
   z-index: 2;
+  
   /* min-height: 100vh; */
   /* margin: 100px 0 0 0; */
   /* background: #343434; */
@@ -21,20 +22,17 @@
   width: 1020px;
   height: auto;
   border-radius: 16px;
-  background: #191919aa;
-  background: linear-gradient(180deg, #292929aa 0%, #191919cc 50%);
-  backdrop-filter: blur(4px);
-  box-shadow: inset 0 2px 2px 0 #e7c4a088,
+  background: var(--card-bg-color);
+  background: linear-gradient(180deg, #292929DD 0%, #191919DD 50%);
+  backdrop-filter: blur(2px);
+  box-shadow: inset 0 2px 2px 0 #e7c4a0ee,
   inset 0 -2px 2px 0 #0003;
-  color: #ccc;
-  text-shadow: 1px 1px 3px #333a;
-  padding: 24px 42px 24px 24px;
+  color: var(--primary-text-color);
   display: flex;
   flex-direction: column;
   justify-content: end;
-  /* padding-right: 42px; */
-  /* margin: 50px auto 0; */
-  /* position: relative; */
+  padding: 24px 42px 24px 24px;
+  text-shadow: 1px 1px 3px #333a;
 
   h2,
   p {
@@ -43,6 +41,17 @@
   
   h2 {
     font-size: 1.1em;
+  }
+
+  .button-container {
+
+    a {
+      background-color: var(--secondary-text-color);
+
+      &:hover {
+        background-color: hsl(from var(--secondary-text-color) h s calc(l + 16));
+      }
+    }
   }
 
   .button {
@@ -73,7 +82,7 @@
 
   .top-light {
     position: absolute;
-    top: -32px;
+    top: -2rem;
     left: 0;
     right: 0; 
     margin: auto;
@@ -81,6 +90,7 @@
     height: 6px;
     border-radius: 6px;
     background: #fffef9;
+    /* Green, Pink, Blue, Orange */
     box-shadow: 
       0 0px 1px 1px #ffc78e,
       0 1px 2px 1px #ff942977,
@@ -92,11 +102,11 @@
   .light {
     --bgref: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 487 487'%3E%3Ccircle cx='243' cy='243.5' r='233' style='fill:none; opacity:.1; stroke:%23aaa; stroke-linecap:round; stroke-miterlimit:10; stroke-width:18px;'/%3E%3Ccircle cx='243.5' cy='243.5' r='243' style='fill:none; stroke:%23111; stroke-linecap:round; stroke-miterlimit:10;'/%3E%3Ccircle cx='243' cy='243.5' r='222' style='fill:none; stroke:%23111; stroke-linecap:round; stroke-miterlimit:10;'/%3E%3Cpath d='m10,243.5C10,114.82,114.32,10.5,243,10.5' style='fill:none; stroke:%23ddd; stroke-linecap:round; stroke-miterlimit:10; stroke-width:18px;'/%3E%3C/svg%3E");
     position: absolute;
-    left: 16px;
-    top: 16px;
+    left: 1rem;
+    top: 1rem;
     margin: 0 auto;
-    width: 164px;
-    height: 164px;
+    width: 10.25rem;
+    height: 10.25rem;
     z-index: -1;
     background-image: var(--bgref);
     animation: rotate360 22s linear infinite;
@@ -120,26 +130,26 @@
       bottom: 0;
       margin: auto;
       background-image: var(--bgref);
-      filter: blur(3px);
+      filter: blur(0.1875rem);
       scale: 1.01;
     }
         
     &::after {
-      filter: blur(8px);
+      filter: blur(0.5rem);
     }
         
     &.sm {
-      bottom: -24px;
-      right: 32px;
+      bottom: -1.5rem;
+      right: 2rem;
       left: auto;
       top: auto;
-      width: 100px;
-      height: 100px;
+      width: 6.25rem; /* 100px */
+      height: 6.25rem; /* 100px */
       animation: rotate360 18s linear -10s infinite;
 
       &.alt {
-        bottom: -16px;
-        left: 44px;
+        bottom: -1rem;
+        left: 2.75rem; /* 44px */
         right: auto;
       }
     }

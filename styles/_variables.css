@@ -1,0 +1,73 @@
+/* **********************************************************
+ *
+ *  Variables
+ *
+************************************************************* */
+@import url("https://fonts.cdnfonts.com/css/mona-sans");
+
+:root {
+  /* Alternatives to using pure/stark black & white (colors that are easier on the eyeballs) */
+  --white-alt-1: #FFF5EA; /* Creme (Yellow Hue) */
+  --white-alt-2: #F8F7F4; /* Cold Steel (Gray Hue) */
+  --white-alt-3: #FBFFF4; /* Mojito Breeze (Green Hue) */
+  --white-alt-4: #F1FAFF; /* Cloud Wisp (Blue Hue) */
+  --white-alt-5: #FEFAFA; /* Snow (Red Hue) */
+  --white-alt-6: #FCFCFE; /* Bone */
+
+  --black-alt-1: #282828; /* Coal (Gray Hue) */
+  --black-alt-2: #111812; /* Night Forest (Green Hue) */
+  --black-alt-3: #130E09; /* Burnt Mocha (Red Hue) */
+  --black-alt-4: #051118; /* Midnight Sea (Blue Hue) */
+  --black-alt-5: #191815; /* Cocoa Spice (Brown Hue) */
+  --black-alt-6: #1E201F; /* Eerie Black (Gray Hue) */
+
+  /* These following palettes go very well with Hot Pink */
+  /* 'Neon Dream' palette  */
+  --neon-dream-1: #FF1493; /* Deep Pink/Salmon */
+  --neon-dream-2: #FF00FF; /* Magenta */
+  --neon-dream-3: #FF4500; /* Orange-Red */ 
+  --neon-dream-4: #FFD700; /* Gold */
+
+  /* Electric POP palette */
+  --electric-pop-2: #8A2BE2; /* Blue Violet */
+  --electric-pop-3: #4B0082; /* Indigo */
+  --electric-pop-4: #0000FF; /* Blue */
+
+  /* Tropical Punch palette */
+  --tropical-punch-1: #FF4500; /* Orange Red */
+  --tropical-punch-2: #be5500; /* Dark Orange */
+  --tropical-punch-3: #ADFF2F; /* Green Yellow */
+
+  --hot-pink: hsla(330, 100%, 71%, 1);
+  --tomato: hsla(9, 100%, 64%, 1);
+  --yellow: hsla(51, 100%, 50%, 1);
+  --orange-red: hsla(16, 100%, 50%, 1);
+  --dark-teal: hsla(180, 90%, 15%, 1);
+  --blue: hsla(199, 89%, 48%, 1);
+  --orange: hsla(33, 100%, 50%, 1);
+  --green: hsla(120, 100%, 25%, 1);
+  --turquoise: hsla(174, 72%, 56%, 1);
+  --teal: hsla(180, 100%, 42%, 1);
+  --orange-brown: hsla(33, 100%, 8%, 1);
+
+  --primary-text-color: hsla(240, 50%, 99%, 1);
+  --primary-color: hsla(198, 93%, 60%, 1);
+  --secondary-color: hsla(30, 100%, 78%, 1);
+  --secondary-text-color: hsla(198, 93%, 60%, 1);
+  --alt-color: hsla(127, 97%, 63%, 1);
+
+  --pink-bg-color-rgb: rgba(255, 107, 181, 1);
+  --orange-bg-color-rgb: rgba(255, 140, 0, 1);
+  --green-bg-color-rgb: rgba(0, 128, 0, 0.3);
+  --blue-bg-color-rgb: rgba(0, 214, 214, 1);
+
+  /* Fonts */
+  --main-content-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  --green-glow-1: #c8ffc8;
+  --green-glow-2: #7eff7eba;
+  --green-glow-3: #41ff41bb;
+  --green-glow-4: #0eda0e77;
+  --green-glow-5: #07a107CC;
+
+}

@@ -1,0 +1,152 @@
+{
+  "tech-stack": [
+    {
+      "imgsrc": "../images/icons/icon-javascript.svg",
+      "alttitle": "JavaScript"
+    },
+    {
+      "imgsrc": "../images/icons/icon-javascript.svg",
+      "alttitle": "HTML5"
+    },
+    {
+      "imgsrc": "../images/icons/icon-css3.svg",
+      "alttitle": "CSS3"
+    },
+    {
+      "imgsrc": "../images/icons/icon-sass.svg",
+      "alttitle": "Scss/Sass CSS"
+    },
+    {
+      "imgsrc": "../images/icons/icon-json.svg",
+      "alttitle": "JSON"
+    },
+    {
+      "imgsrc": "../images/icons/icon-git.svg",
+      "alttitle": "git"
+    },
+    {
+      "imgsrc": "../images/icons/icon-github.svg",
+      "alttitle": "GitHub and GitLab"
+    },
+    {
+      "imgsrc": "../images/icons/icon-jira.svg",
+      "alttitle": "Jira"
+    },
+    {
+      "imgsrc": "../images/icons/icon-typescript.svg",
+      "alttitle": "TypeScript"
+    },
+    {
+      "imgsrc": "../images/icons/icon-jquery.svg",
+      "alttitle": "jQuery"
+    },
+    {
+      "imgsrc": "../images/icons/icon-adobe.svg",
+      "alttitle": "Adobe"
+    },
+    {
+      "imgsrc": "../images/icons/icon-atlassian.svg",
+      "alttitle": "Atlassian"
+    },
+    {
+      "imgsrc": "../images/icons/icon-confluence.svg",
+      "alttitle": "Confluence"
+    },
+    {
+      "imgsrc": "../images/icons/icon-react.svg",
+      "alttitle": "React.js"
+    },
+    {
+      "imgsrc": "../images/icons/icon-angular.svg",
+      "alttitle": "Angular.js"
+    },
+    {
+      "imgsrc": "../images/icons/icon-eslint.svg",
+      "alttitle": "ESLint"
+    },
+    {
+      "imgsrc": "../images/icons/icon-wordpress.svg",
+      "alttitle": "WordPress"
+    },
+    {
+      "imgsrc": "../images/icons/icon-jest.svg",
+      "alttitle": "Jest"
+    },
+    {
+      "imgsrc": "../images/icons/icon-material-ui.svg",
+      "alttitle": "Material UI"
+    },
+    {
+      "imgsrc": "../images/icons/icon-nodejs.svg",
+      "alttitle": "Node.js"
+    },
+    {
+      "imgsrc": "../images/icons/icon-npm.svg",
+      "alttitle": "npm"
+    },
+    {
+      "imgsrc": "../images/icons/icon-php.svg",
+      "alttitle": "PHP"
+    },
+    {
+      "imgsrc": "../images/icons/icon-prettier.svg",
+      "alttitle": "Prettify / Prettier"
+    },
+    {
+      "imgsrc": "../images/icons/icon-redux.svg",
+      "alttitle": "Redux"
+    },
+    {
+      "imgsrc": "../images/icons/icon-grunt.svg",
+      "alttitle": "Grunt"
+    },
+    {
+      "imgsrc": "../images/icons/icon-vercel.svg",
+      "alttitle": "Vercel"
+    },
+    {
+      "imgsrc": "../images/icons/icon-bitbucket.svg",
+      "alttitle": "BitBucket"
+    },
+    {
+      "imgsrc": "../images/icons/icon-less.svg",
+      "alttitle": "Less CSS"
+    },
+    {
+      "imgsrc": "../images/icons/icon-nextjs.svg",
+      "alttitle": "Next JS"
+    },
+    {
+      "imgsrc": "../images/icons/icon-nx.svg",
+      "alttitle": "NX"
+    },
+    {
+      "imgsrc": "../images/icons/icon-planet-scale.svg",
+      "alttitle": "Planet Scale"
+    },
+    {
+      "imgsrc": "../images/icons/icon-prisma.svg",
+      "alttitle": "Vue JS"
+    },
+    {
+      "imgsrc": "../images/icons/icon-vscode.svg",
+      "alttitle": "Visual Studio (VS) Code"
+    },
+    {
+      "imgsrc": "../images/icons/icon-sublime-text.svg",
+      "alttitle": "Sublime Text"
+    },
+    {
+      "imgsrc": "../images/icons/icon-bootstrap.svg",
+      "alttitle": "Bootstrap"
+    },
+    {
+      "imgsrc": "../images/icons/icon-tailwind-css.svg",
+      "alttitle": "Tailwind CSS"
+    },
+    {
+      "imgsrc": "../images/icons/icon-t3.svg",
+      "alttitle": "T3-Stack (TypeScript, tRPC, and Tailwind) with Next.js"
+    }
+  ]
+}

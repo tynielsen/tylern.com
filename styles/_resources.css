@@ -1,0 +1,45 @@
+/* **********************************************************
+ *
+ *  Resources Section & Page
+ *
+************************************************************* */
+section#resources {
+  position: relative;
+
+  .resource-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+
+    li {
+      flex-grow: 1;
+
+      a {
+        display: block;
+        color: var(--secondary-text-color);
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––————————————————
+  @Section: Neon Light Card
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––————————————— */
+.accents {
+
+  .top-lights {
+    background: rgb(255, 254, 249);
+    /* Green, Pink, Blue, Orange */
+    box-shadow: 
+      0 0px 1px 1px #ffc78e,
+      0 1px 2px 1px #ff942977,
+      0 2px 6px 1px #e98b2d77,
+      0 4px 12px 0px #ff9e3d99,
+      0 12px 20px 12px #ff800044;
+  }
+}

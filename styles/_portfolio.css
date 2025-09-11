@@ -1,0 +1,11 @@
+/* **********************************************************
+ *
+ *  Portfolio Section, Cards, Page
+ *
+************************************************************* */
+section#portfolio {
+
+  span.vlink {
+    color: var(--secondary-text-color);
+  }
+}

@@ -6,28 +6,31 @@
  *      Intended use is for temporary styles
  *
 ************************************************************* */
-@import url("./styles.css");
+@import url("./_styles.css");
 
 /* Variables, Functions, Mixins
 ••••••••••••••••••••••••** */
-@import url("./variables.css");
+@import url("./_variables.css");
+@import url("./_themes.css");
 
 /* Shared Stylesheets */
-@import url("./global.css");
-@import url("./logo-slider.css");
-@import url("./typography.css");
-@import url("./nav.css");
-@import url("./header.css");
-/* @import url("./footer.css"); */
+@import url("./_global.css");
+@import url("./_typography.css");
+@import url("./_logo-slider.css");
+@import url("./_nav.css");
+@import url("./_header.css");
+/* @import url("./_footer.css"); */
 
 
 /* Content Sections
 ************************** */
-@import url("./card-neon-glass.css");
-@import url("./about.css");
-@import url("./resources.css");
+@import url("./_card-neon-glass.css");
+@import url("./_about.css");
+@import url("./_contact.css");
+@import url("./_portfolio.css");
+@import url("./_resources.css");
 
 
 /* Responsive (Mobile First
 ************************** */
-/* @import url("./desktop.css") screen and (min-width: 767px); */
+/* @import url("./_desktop.css") screen and (min-width: 767px); */
