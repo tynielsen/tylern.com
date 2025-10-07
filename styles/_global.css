@@ -9,7 +9,7 @@ html {
 }
 
 body::selection {
-  background-color: var(--hot-pink);
+  background-color: var(--selection-highlight-color);
   color: var(--black-alt-3);
 }
 
@@ -45,14 +45,22 @@ h1 > span {
   width: 1px;
 }
 
+.wip {
+  border: 2px solid var(--hot-pink);
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+  border-radius: 0.25rem;
+  width: 100%;
+}
+
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––————————————————
   @Section: Theme Picker Form
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––————————————— */
 .theme-picker {
   position: sticky;
   top: 0;
-  left: 34%;
-  transform: translateX(-34%);
+  left: 44%;
+  transform: translateX(-44%);
   width: fit-content;
   z-index: 12;
 

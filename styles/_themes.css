@@ -8,6 +8,7 @@
   --text-color: var(--primary-text-color);
   --alt-text-color: var(--blue);
   --secondary-text-color: var(--blue);
+  --selection-highlight-color: var(--hot-pink);
 
   --main-accent-color: var(--blue-bg-color-rgb);
 }
@@ -17,6 +18,7 @@
   --text-color: var(--primary-text-color);
   --alt-text-color: var(--hot-pink);
   --secondary-text-color: var(--blue);
+  --selection-highlight-color: var(--turquoise);
 
   --main-accent-color: var(--blue-bg-color-rgb);
 
@@ -30,6 +32,7 @@
   --text-color: var(--primary-text-color);
   --alt-text-color: var(--blue);
   --secondary-text-color: var(--hot-pink);
+  --selection-highlight-color: var(--hot-pink);
 
   --main-accent-color: var(--pink-bg-color-rgb);
   
@@ -44,6 +47,7 @@
   --text-color: var(--primary-text-color);
   --alt-text-color: var(--green);
   --secondary-text-color: var(--orange);
+  --selection-highlight-color: #FFAA33;
 
   --main-accent-color: var(--orange-bg-color-rgb);
 
@@ -60,6 +64,8 @@
   --alt-text-color: var(--orange);
   --secondary-text-color: var(--green);
   --secondary-text-color-rgb: rgba(0, 255, 0, 0.12);
+  --selection-highlight-color: lime;
+
   --main-accent-color: var(--green-bg-color-rgb);
   /* hsl(from var(--secondary-text-color) h s calc(l + 16)); */
 }
