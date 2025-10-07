@@ -29,6 +29,7 @@ main {
 
 section {
   margin: 8rem auto 0;
+  scroll-margin-top: 110px;
 }
 
 h1 > span {
