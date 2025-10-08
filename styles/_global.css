@@ -48,11 +48,12 @@ h1 > span {
 
 .wip {
   border: 2px solid var(--hot-pink);
+  border-radius: 0.25rem;
   padding: 0.25rem 0.5rem;
   text-align: center;
-  border-radius: 0.25rem;
   width: 100%;
 }
+
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––————————————————
   @Section: Theme Picker Form
@@ -153,6 +154,7 @@ h1 > span {
   }
 }
 
+
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––————————————————
   @Section: Project Card — Global Consumption
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––————————————— */
@@ -165,4 +167,3 @@ h1 > span {
   transform: translateY(-5px);
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
-
