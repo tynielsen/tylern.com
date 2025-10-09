@@ -47,7 +47,7 @@
   --orange: hsla(33, 100%, 50%, 1);
   --green: hsla(120, 100%, 25%, 1);
   --turquoise: hsla(174, 72%, 56%, 1);
-  --light-blue: lightblue;
+  --light-blue: hsla(195, 53%, 79%, 1);
   --teal: hsla(180, 100%, 42%, 1);
   --orange-brown: hsla(33, 100%, 8%, 1);
 
@@ -57,10 +57,10 @@
   --secondary-text-color: hsla(198, 93%, 60%, 1);
   --alt-color: hsla(127, 97%, 63%, 1);
 
-  --pink-bg-color-rgb: rgba(255, 107, 181, 1);
-  --orange-bg-color-rgb: rgba(255, 140, 0, 1);
-  --green-bg-color-rgb: rgba(0, 128, 0, 0.3);
-  --blue-bg-color-rgb: rgba(0, 214, 214, 1);
+  --pink-bg-color-rgb: hsl(330, 100%, 71%);
+  --orange-bg-color-rgb: hsl(33, 100%, 50%);
+  --green-bg-color-rgb: hsla(120, 100%, 25%, 0.3);
+  --blue-bg-color-rgb: hsl(180, 100%, 42%);
 
   /* Fonts */
   --main-content-font: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
