@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TylerN | ReactJS Overview</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    />
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/page-reactjs.css" rel="stylesheet" />
+    <script type="module" src="js/index.js" defer></script>
+  </head>
+  <body>
+    <header> <!-- Header & Navigation -->
+      <a href="#" class="logo text-2xl">
+        T is for Tech &amp; Tech is for T (yler).
+      </a>
+
+      <nav class="main-nav">
+        <a href="#hero" class="text-lg">Top</a>
+        <a href="#about" class="text-lg">About</a>
+        <a href="#portfolio" class="text-lg">Portfolio</a>
+        <a href="#resources" class="text-lg">Resources</a>
+        <a href="#contact" class="text-lg">Contact</a>
+      </nav>
+    </header>
+    <!-- END Header & Navigation -->
+
+    <form action="" class="theme-picker" title="Theme Picker: Pick a color theme!">
+      <fieldset>
+        <legend class="visually-hidden">Theme Picker: Pick a theme</legend>
+
+        <label for="default" class="visually-hidden radio-label default-radio-btn">Default (Light)</label>
+        <input type="radio" name="theme" id="default" title="Default Theme" checked>
+
+        <label for="pink" class="visually-hidden radio-label pink-radio-btn">80's Neon Pink</label>
+        <input type="radio" name="theme" id="pink" title="Pink Theme">
+
+        <label for="blue" class="visually-hidden radio-label blue-radio-btn">Blue</label>
+        <input type="radio" name="theme" id="blue" title="Blue Theme">
+
+        <label for="green" class="visually-hidden radio-label green-radio-btn">Green</label>
+        <input type="radio" name="theme" id="green" title="Green Theme">
+
+        <label for="orange" class="visually-hidden radio-label orange-radio-btn">Orange</label>
+        <input type="radio" name="theme" id="orange" title="Orange Theme">
+      </fieldset>
+    </form>
+
+    <main> <!-- Main Content -->
+      <section>
+        <div>
+          <h1>React.js: High-Level Technical Overview</h1>
+          
+          <h2>Core Concept</h2>
+          <p>
+            React is a
+            <strong>declarative, component-based JavaScript library</strong> for
+            building user interfaces, primarily for single-page applications.
+            Created by Facebook (now Meta) in 2013, it focuses on the view layer
+            and uses a unidirectional data flow architecture.
+          </p>
+
+          <h2>Fundamental Architecture</h2>
+
+          <h3>Component Model</h3>
+          <ul
+            class="list-disc"
+          >
+            <li>
+              <strong>Function Components</strong>: Modern approach using pure
+              JavaScript functions that return JSX
+            </li>
+            <li>
+              <strong>Class Components</strong>: Legacy approach (still supported)
+              extending React.Component
+            </li>
+            <li>
+              Components encapsulate UI logic, state, and rendering into reusable,
+              composable units
+            </li>
+          </ul>
+
+          <h3>JSX (JavaScript XML)</h3>
+          <ul
+            class="list-disc"
+          >
+            <li>
+              Syntax extension allowing HTML-like code within JavaScript
+            </li>
+            <li>
+              Transpiled to
+              <code
+                class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]"
+                >React.createElement()</code
+              >
+              calls by Babel
+            </li>
+            <li>
+              Enables declarative UI descriptions with full JavaScript expression
+              power
+            </li>
+          </ul>
+
+          <h3>Virtual DOM</h3>
+          <ul
+            class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-2.5 pl-7"
+          >
+            <li>
+              In-memory representation of the actual DOM
+            </li>
+            <li>
+              <strong>Reconciliation Algorithm</strong>: Efficiently diffs virtual
+              DOM trees to compute minimal DOM mutations
+            </li>
+            <li>
+              Batches updates for performance optimization
+            </li>
+            <li>
+              Avoids expensive direct DOM manipulation
+            </li>
+          </ul>
+          <h2 class="text-xl font-bold text-text-100 mt-1 -mb-0.5">
+            State Management
+          </h2>
+          <h3>
+            <strong>Built-in State</strong>
+          </h3>
+          <ul
+            class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-2.5 pl-7"
+          >
+            <li>
+              <code
+                class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]"
+                >useState</code
+              >: Hook for local component state
+            </li>
+            <li>
+              <code
+                class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]"
+                >useReducer</code
+              >: Hook for complex state logic (Redux-like patterns)
+            </li>
+            <li>
+              State is immutable; updates trigger re-renders
+            </li>
+          </ul>
+          <h3>
+            <strong>Props (Properties)</strong>
+          </h3>
+          <ul
+            class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-2.5 pl-7"
+          >
+            <li>
+              Unidirectional data flow from parent to child
+            </li>
+            <li>
+              Immutable within receiving component
+            </li>
+            <li>
+              Type-checking available via PropTypes or TypeScript
+            </li>
+          </ul>
+          <h2 class="text-xl font-bold text-text-100 mt-1 -mb-0.5">
+            Key Mechanisms
+          </h2>
+          <h3>
+            <strong>Hooks</strong> (introduced React 16.8)
+          </h3>
+          <p>
+            Modern functional programming paradigm replacing class lifecycle
+            methods:
+          </p>
+          <ul
+            class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-2.5 pl-7"
+          >
+            <li>
+              <code
+                class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]"
+                >useEffect</code
+              >: Side effects, subscriptions, data fetching
+            </li>
+            <li>
+              <code
+                class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]"
+                >useContext</code
+              >: Access to context without prop drilling
+            </li>
+            <li>
+              <code
+                class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]"
+                >useMemo</code
+              >/<code
+                class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]"
+                >useCallback</code
+              >: Performance optimization through memoization
+            </li>
+            <li>
+              <code
+                class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]"
+                >useRef</code
+              >: Direct DOM access or mutable value persistence
+            </li>
+            <li>
+              Custom hooks for reusable stateful logic
+            </li>
+          </ul>
+          <h3>
+            <strong>Context API</strong>
+          </h3>
+          <ul
+            class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-2.5 pl-7"
+          >
+            <li>
+              Global state management without prop drilling
+            </li>
+            <li>
+              Provider/Consumer pattern
+            </li>
+            <li>
+              Useful for themes, authentication, localization
+            </li>
+          </ul>
+          <h3>
+            <strong>Lifecycle &amp; Rendering</strong>
+          </h3>
+          <ul
+            class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-2.5 pl-7"
+          >
+            <li>
+              <strong>Mounting</strong>: Component initialization
+            </li>
+            <li>
+              <strong>Updating</strong>: Re-renders triggered by state/prop
+              changes
+            </li>
+            <li>
+              <strong>Unmounting</strong>: Cleanup operations
+            </li>
+            <li>
+              <strong>Concurrent Rendering</strong> (React 18+): Interruptible
+              rendering for better UX
+            </li>
+          </ul>
+          <h2 class="text-xl font-bold text-text-100 mt-1 -mb-0.5">
+            Performance Optimization
+          </h2>
+          <ul
+            class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-2.5 pl-7"
+          >
+            <li>
+              <strong>React.memo</strong>: Prevents unnecessary re-renders via
+              shallow comparison
+            </li>
+            <li>
+              <strong>Code Splitting</strong>: Dynamic imports with
+              <code
+                class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]"
+                >React.lazy()</code
+              >
+              and
+              <code
+                class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]"
+                >Suspense</code
+              >
+            </li>
+            <li>
+              <strong>Fiber Architecture</strong>: Incremental rendering engine
+              enabling time-slicing and prioritization
+            </li>
+            <li>
+              <strong>Automatic Batching</strong>: Groups multiple state updates
+            </li>
+          </ul>
+          <h2 class="text-xl font-bold text-text-100 mt-1 -mb-0.5">
+            Ecosystem Integration
+          </h2>
+          <h3>
+            <strong>Routing</strong>
+          </h3>
+          <ul
+            class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-2.5 pl-7"
+          >
+            <li>
+              React Router (most common): Declarative, component-based routing
+            </li>
+          </ul>
+          <h3>
+            <strong>State Management Libraries</strong>
+          </h3>
+          <ul
+            class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-2.5 pl-7"
+          >
+            <li>
+              Redux, MobX, Zustand, Recoil for complex application state
+            </li>
+          </ul>
+          <h3>
+            <strong>Server-Side Rendering (SSR)</strong>
+          </h3>
+          <ul
+            class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-2.5 pl-7"
+          >
+            <li>
+              Next.js: Full-stack framework with SSR, SSG, ISR
+            </li>
+            <li>
+              Improved SEO and initial load performance
+            </li>
+          </ul>
+          <h3>
+            <strong>Build Tools</strong>
+          </h3>
+          <ul
+            class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-2.5 pl-7"
+          >
+            <li>
+              Vite, Webpack, Create React App
+            </li>
+            <li>
+              Babel for JSX transpilation
+            </li>
+          </ul>
+          <h2 class="text-xl font-bold text-text-100 mt-1 -mb-0.5">
+            Modern Features (React 18+)
+          </h2>
+          <ul
+            class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-2.5 pl-7"
+          >
+            <li>
+              <strong>Concurrent Features</strong>:
+              <code
+                class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]"
+                >useTransition</code
+              >,
+              <code
+                class="bg-text-200/5 border border-0.5 border-border-300 text-danger-000 whitespace-pre-wrap rounded-[0.4rem] px-1 py-px text-[0.9rem]"
+                >useDeferredValue</code
+              >
+            </li>
+            <li>
+              <strong>Suspense for Data Fetching</strong>: Declarative loading
+              states
+            </li>
+            <li>
+              <strong>Server Components</strong>: Rendering components on server
+              without client JS
+            </li>
+            <li>
+              <strong>Automatic Batching</strong>: Extended to async functions
+            </li>
+          </ul>
+          <h2 class="text-xl font-bold text-text-100 mt-1 -mb-0.5">
+            Architecture Patterns
+          </h2>
+          <ul
+            class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-2.5 pl-7"
+          >
+            <li>
+              <strong>Unidirectional Data Flow</strong>: Data flows down, events
+              bubble up
+            </li>
+            <li>
+              <strong>Composition over Inheritance</strong>: Build complex UIs
+              from simple components
+            </li>
+            <li>
+              <strong>Higher-Order Components (HOC)</strong>: Function wrapping
+              components for reusability
+            </li>
+            <li>
+              <strong>Render Props</strong>: Share code between components using
+              props with function values
+            </li>
+            <li>
+              <strong>Container/Presentational Pattern</strong>: Separate logic
+              from presentation
+            </li>
+          </ul>
+          <h2 class="text-xl font-bold text-text-100 mt-1 -mb-0.5">
+            Type Safety
+          </h2>
+          <ul
+            class="[&amp;:not(:last-child)_ul]:pb-1 [&amp;:not(:last-child)_ol]:pb-1 list-disc space-y-2.5 pl-7"
+          >
+            <li>
+              TypeScript integration for static typing
+            </li>
+            <li>
+              Interfaces for props and state definitions
+            </li>
+            <li>
+              Generic components for reusable typed logic
+            </li>
+          </ul>
+          <p>
+            React's philosophy centers on predictability, composability, and
+            developer experience, making it the foundation for modern web
+            application development.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-center py-8 px-6 mt-12">
+      <p class="text-gray-400 copyright">
+        &copy; <span id="c-yr"></span> Tyler Nielsen. All Rights Reserved.
+      </p>
+
+      <div class="external-links">
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-gray-400 hover:text-sky-400 transition-colors">
+          <svg
+            class=""
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/yourprofile" target="_blank" class="text-gray-400 hover:text-sky-400 transition-colors">
+          <svg
+            class=""
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.468-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.614.8.575 4.767-1.589 8.205-6.085 8.205-11.385 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+        <!-- You can add more social links here -->
+      </div>
+    </footer>
+    <!-- END Footer -->
+  </body>
+</html>

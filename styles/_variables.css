@@ -37,6 +37,9 @@
   --tropical-punch-1: #FF4500; /* Orange Red */
   --tropical-punch-2: #be5500; /* Dark Orange */
   --tropical-punch-3: #ADFF2F; /* Green Yellow */
+  --tropical-punch-3-1: #00ff00;
+  --tropical-punch-4: #00F0FF;
+  --tropical-punch-5: #FF991C;
 
   --hot-pink: hsla(330, 100%, 71%, 1);
   --tomato: hsla(9, 100%, 64%, 1);
@@ -50,6 +53,7 @@
   --light-blue: hsla(195, 53%, 79%, 1);
   --teal: hsla(180, 100%, 42%, 1);
   --orange-brown: hsla(33, 100%, 8%, 1);
+  --slug-green: hsla(60, 82%, 42%, 1);
 
   --primary-text-color: hsla(240, 50%, 99%, 1);
   --primary-color: hsla(198, 93%, 60%, 1);

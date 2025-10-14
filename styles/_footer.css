@@ -7,8 +7,21 @@ footer {
   width: 1200px;
   margin: 8rem auto 2rem;
 
+  .external-links {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5rem;
+
+    svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      color: #fff;
+    }
+  }
+
   nav {
     margin-top: 4rem;
+
     ul {
       justify-content: right;
     }

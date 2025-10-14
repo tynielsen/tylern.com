@@ -5,6 +5,15 @@
 ************************************************************* */
 section#portfolio {
 
+  .project-card {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      flex-grow: 1;
+    }
+  }
+  
   span.vlink {
     color: var(--secondary-text-color);
   }
