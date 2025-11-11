@@ -17,15 +17,18 @@
   --black-alt-1: #282828; /* Coal (Gray Hue) */
   --black-alt-2: #111812; /* Night Forest (Green Hue) */
   --black-alt-3: #130E09; /* Burnt Mocha (Red Hue) */
-  --black-alt-4: #051118; /* Midnight Sea (Blue Hue) */
+  --black-alt-4: #0a0b5c; /* Midnight Sea (Blue Hue) */
   --black-alt-5: #191815; /* Cocoa Spice (Brown Hue) */
   --black-alt-6: #1E201F; /* Eerie Black (Gray Hue) */
 
   /* These following palettes go very well with Hot Pink */
   /* 'Neon Dream' palette  */
-  --neon-dream-1: #FF1493; /* Deep Pink/Salmon */
+  --neon-dream-1: #FF46A2; /* Neon Pink */
   --neon-dream-2: #FF00FF; /* Magenta */
-  --neon-dream-3: #FF4500; /* Orange-Red */ 
+  --or:               #FF4500; /* Red Orange */
+  --neon-dream-3:   #ff6a00; /* Neon Orange */ 
+  --neon-orange:  #FF5F1F; /* Neon Orange, alt */
+  --asdflk-lkjsl: #ff5b00;
   --neon-dream-4: #FFD700; /* Gold */
 
   /* Electric POP palette */
@@ -41,7 +44,7 @@
   --tropical-punch-4: #00F0FF;
   --tropical-punch-5: #FF991C;
 
-  --hot-pink: hsla(330, 100%, 71%, 1);
+  --hot-pink: #ff46a2;
   --tomato: hsla(9, 100%, 64%, 1);
   --yellow: hsla(51, 100%, 50%, 1);
   --orange-red: hsla(16, 100%, 50%, 1);

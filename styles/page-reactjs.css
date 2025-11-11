@@ -1,3 +1,7 @@
 h3 {
   font-weight: 700;
 }
+
+section {
+  max-width: fit-content;
+}
