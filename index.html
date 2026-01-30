@@ -16,12 +16,12 @@
     <script type="module" src="js/index.js" defer></script>
   </head>
   <body>
-    
-    <header class="bg-opacity-34 backdrop-blur-md"> <!-- Header & Navigation -->
+
+    <header class="bg-opacity-34 backdrop-blur-md">
       <nav class="container py-4 px-6">
 
         <a href="#" class="logo text-2xl">
-          T is for Tech &amp; Tech is for T (yler).
+          T is for Tech &amp; Tech is for T (Tyler).
         </a>
 
         <div class="main-nav hidden md:flex space-x-8">
@@ -36,6 +36,7 @@
         <button
           id="mobile-menu-button"
           class="md:hidden text-gray-200 focus:outline-none"
+          type="button"
         >
           <svg
             class="w-6 h-6"
@@ -53,20 +54,19 @@
           </svg>
         </button>
       </nav>
-      <!-- Mobile Menu -->
+      <!-- Mobile Nav Menu -->
       <div id="mobile-menu" class="hidden md:hidden bg-gray-800 px-6 pb-4">
         <a href="#hero" class="block text-lg py-2 hover:text-sky-400 transition-colors">Top</a>
         <a href="#about" class="block text-lg py-2 hover:text-sky-400 transition-colors">About</a>
-        <a href="#projects" class="block text-lg py-2 hover:text-sky-400 transition-colors">Projects</a>
+        <a href="#portfolio" class="block text-lg py-2 hover:text-sky-400 transition-colors">Portfolio</a>
         <a href="#resources" class="block text-lg py-2 hover:text-sky-400 transition-colors">Resources</a>
         <a href="#contact" class="block text-lg py-2 hover:text-sky-400 transition-colors">Contact</a>
       </div>
     </header>
-    <!-- END Header & Navigation -->
 
     <form action="" class="theme-picker" title="Theme Picker: Pick a color theme!">
       <fieldset>
-        <legend class="visually-hidden">Pick a Theme</legend>
+        <legend class="visually-hidden">Theme Choices</legend>
 
         <label for="default" class="visually-hidden radio-label default-radio-btn">Default (Light)</label>
         <input type="radio" name="theme" id="default" title="Default Theme" checked>
@@ -83,148 +83,110 @@
         <label for="orange" class="visually-hidden radio-label orange-radio-btn">Orange</label>
         <input type="radio" name="theme" id="orange" title="Orange Theme">
       </fieldset>
-    </form>
+    </form> <!-- END theme-picker -->
 
-    <main> <!-- Main Content -->
-
-      <!-- Hero Section -->
-      <!-- <section id="hero" class="min-h-screen flex justify-center text-center"> --> <!-- Hero Section START -->
-      <!-- <div class="space-y-6">
-          <h1
-            class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white"
-          >
-            Hi, I'm <span class="text-sky-400">Tyler Nielsen</span>.
-          </h1>
-
-          <p
-            class="text-xl md:text-2xl font-medium text-gray-400 max-w-3xl mx-auto"
-          >
-            A Senior Front-End Engineer with 14 years of experience,
-            specializing in building clean, performant, and accessible digital
-            content using HTML, CSS, and JavaScript.
-          </p>
-
-          <div class="flex flex-col sm:flex-row justify-center gap-4 pt-6">
-            <a
-              href="#projects"
-              class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors"
-            >
-              View My Work
-            </a>
-
-            <a
-              href="/contact"
-              class="inline-block bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors"
-            >
-              Get in Touch
-            </a>
-          </div>
-        </div>
-      </section> -->
-      <!-- END Hero Section -->
-      
-
-      <section id="hero"> <!-- About Website Section -->
+    <main role="main">
+      <section id="hero">
         <div class="glass-card-container">
           <div class="space-y-6 card">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white">
-              Fresh. Hot. <span class="">Pixel-Perfect.</span>
-            </h1>
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white">Fresh. Hot. <span class="">Pixel-Perfect.</span></h1>
             <p>
-              You know the feeling when everything just… clicks? When users smile instead of 
-              swear; we usually hear silence in those cases. It's a great feeling when code 
-              runs so smooth it practically purrs. That's not luck. Nor is it something to be 
-              memorized or read in a classroom. That's craftwork that was learned; a lesson 
-              learned through effort, aka., wisdom and experience.
+              You know the feeling when everything just… clicks? When users 
+              smile instead of scream; we usually hear silence if successful. 
+              It's a great feeling when code runs so smooth it practically 
+              purrs. That's not luck, nor is it something that can simply be 
+              memorized or taught in school. That's craft/skill that was 
+              learned on the fly; a lesson learned through trial and error 
+              resulting in experience and wisdom.
             </p>
             <p>
-              For 15 years, I've been obsessed with building and rebuilding …and rebuilding… 
-              resilient systems that just work. My passion is taking on complex challenges 
-              and turning them into the most simple-looking solutions that teams can be 
-              proud of. Along the way, helpful resources are stumbled upon, and hopefully 
-              this will help others find some valuable resources too.
+              For a very long time now I've been obsessed with building and 
+              rebuilding (and rebuilding) resilient systems that just work. My 
+              motivation is taking complex challenges and turning 
+              them into the simplest looking solutions that everyone can be 
+              proud of. Along the way, helpful resources are stumbled upon, 
+              and hopefully this will help others find some valuable resources 
+              too.
             </p>
             <p class="wip"><strong>
-              &ast; By the way, please excuse the placeholder content and links to nowhere - this website is a work in progress and actively being built. Currently, the homepage is the only live page, and some content is still being refined.
+              &ast; This website is a work in progress and actively being 
+              built. Currently, the homepage is the only live page, and its 
+              content is actively being refined.
             </strong></p>
-
             <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48" viewBox="0 0 640 640">
               <path fill="#fff" d="M160 96C124.7 96 96 124.7 96 160L96 480C96 515.3 124.7 544 160 544L480 544C515.3 544 544 515.3 544 480L544 160C544 124.7 515.3 96 480 96L160 96zM165 266.2L231.5 266.2L231.5 480L165 480L165 266.2zM236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160C219.5 160 236.7 177.2 236.7 198.5zM413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480L413.9 480z"/>
             </svg>
-
             <div class="button-container flex flex-col sm:flex-row justify-center gap-4 pt-6">
               <a href="#resources" class="inline-block font-bold py-3 px-8 rounded-full shadow-lg transition-colors">
                 Online Resources
               </a>
-
               <a href="#projects" class="inline-block font-bold py-3 px-8 rounded-full shadow-lg transition-colors">
                 Review Projects
               </a>
-
               <a href="contact" class="inline-block font-bold py-3 px-8 rounded-full shadow-lg transition-colors">
                 Get in Touch
               </a>
             </div>
           </div>
-
-          <div class="accents"> <!-- "glass-card" base designed by Fabian Albert: https://www.pinterest.com/pin/1045749975969474374/ -->
+          <div class="accents">
             <div class="top-light"></div>
             <div class="light"></div>
             <div class="light sm"></div>
           </div>
-        </div> <!-- END:</.glass-card-container> -->
-      </section>
-      <!-- END About Website Section -->
+        </div>
+      </section> <!-- END hero section -->
 
-
-      <section id="about" class=""> <!-- About The Developer Section START -->
+      <section id="about">
         <div class="mx-auto grid md:grid-cols-2 gap-12">
           <div class="order-2 md:order-1 space-y-6">
             <h2>About</h2>
-            <h3>~15 Years Developing &amp; Crafting the Web</h3>
-
+            <h3>Over 12 Years Crafting Custom Web Applications &amp; Digital Content.</h3>
             <p class="leading-relaxed">
-              When interfaces are snappy and responsive and flow like water …when 
-              users smile instead of swear, and when code runs so smooth it practically 
-              purrs? That isn't luck. It's a skill that must be learned.
+              When web apps are quick, snappy, and responsive — when they load 
+              and flow naturally, like water …when users are grinning instead 
+              of frowning… probably even swearing, and when code runs so 
+              smooth it practically purrs? It's got to come from somewhere, 
+              because unfortunately those skills can't be taught. They're 
+              picked up with experience.
             </p>
             <p class="leading-relaxed">
-              With over a 14 years of hands-on experience, I've had the privilege
-              of contributing to a wide range of diverse projects, from large-scale
-              enterprise applications to small, bespoke digital content. My passion
-              lies in turning complex projects into simple, elegant, and
-              maintainable solutions.
+              With over a 12 years of hands-on experience, I've had the 
+              privilege of contributing to a wide range of projects, from large
+              -scale enterprise applications with global reach, to bespoke, 
+              websites for local companies. My passion is turning seemingly 
+              complex projects into simple, elegant, and maintainable 
+              solutions. Don't get me wrong, that doesn't just happen on first 
+              attempts. Continuous Integration/Continuous Development and 
+              Deployment, user tests, A/B tests, and experiment. Not only on 
+              how to identify but what will work the very best.
             </p>
             <p class="leading-relaxed">
-              As a wellknown advocate for responsive design, WCAG Accessibility, best coding practices and standards, and agile methodologies,
-              I thrive in collaborative environments whilst able to continue learning, resulting in me staying on the cutting edge of front-end development.
+              As a big advocate for fully responsive design, maintainable 
+              code, WCAG compliance and accessibility, standards and best 
+              coding practices, I thrive in collaborative environments whilst 
+              able to continue learning, resulting in me staying on the 
+              cutting edge of frontend development.
             </p>
-
-            <a
+            <!-- <a
               href="about.html"
               class="mt-6 inline-block transition-colors"
               >
               Check Out My Full Portfolio<span class="animarrow">&rarr;</span>
-            </a>
+            </a> -->
           </div>
-
           <div class="order-1 md:order-2">
             <img
               src="https://www.placecats.com/476/475"
-              alt="A professional head shot of the developer, Tyler Nielsen …'s cat (not me, for now)."
-              title="A professional head shot of the developer, Tyler Nielsen …'s cat (not me, for now)."
+              alt="A professional head shot of the developer, Tyler Nielsen…'s cat (TODO)."
+              title="A professional head shot of the developer, Tyler Nielsen…'s cat (TODO)."
               class="rounded-xl w-full h-auto object-cover shadow-2xl"
             />
           </div>
         </div>
-      </section> <!-- END About The Developer Section -->
+      </section> <!-- END about section -->
 
-      
-      <section id="portfolio"> <!-- Portfolio Section START -->
-        <h2>
-          Featured Portfolio Projects
-        </h2>
-
+      <section id="portfolio">
+        <h2>Featured Portfolio Projects</h2>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
           <!-- 1st Featured Portfolio Project -->
           <a
@@ -238,20 +200,15 @@
               title="Campbell's"
               class="rounded-lg mb-4 w-full h-auto object-cover"
             />
-            <h3 class="text-white mb-2">
-              Campbell's
-            </h3>
+            <h3 class="text-white mb-2">Campbell's</h3>
             <p class="text-gray-400 text-sm mb-4">
               Developed a responsive ecosystem of multiple websites using WordPress, custom WP themes, 
               a core WP theme that the custom themes use. For styles we used Sass CSS. I was able to 
               incorporate all brands owned by Campbell's (Soup, V8, Swanson, Prego, Pace, and more) into 
               this WordPress multi-site, or like we called it: ecosystem.
             </p>
-            <span class="vlink inline-block hover:underline">
-              View Project &rarr;
-            </span>
+            <span class="vlink inline-block hover:underline">View Project &rarr;</span>
           </a>
-
           <!-- 2nd Featured Portfolio Project -->
           <a
             href="https://www.pepsico.com/"
@@ -264,18 +221,13 @@
               title="PepsiCo"
               class="rounded-lg mb-4 w-full h-auto object-cover"
             />
-            <h3 class="text-white mb-2">
-              PepsiCo
-            </h3>
+            <h3 class="text-white mb-2">PepsiCo</h3>
             <p class="text-gray-400 text-sm mb-4">
-              Led the Front-End and User Interface engineering for a content management system,
+              Led the Frontend and User Interface engineering for a content management system,
               focusing on accessibility, responsive design, and SEO.
             </p>
-            <span class="vlink inline-block hover:underline">
-              View Project &rarr;
-            </span>
+            <span class="vlink inline-block hover:underline">View Project &rarr;</span>
           </a>
-
           <!-- 3rd Featured Portfolio Project -->
           <a
             href="https://my529.org/investment-options/"
@@ -284,395 +236,109 @@
           >
             <img
               src="images/screengrab-my529.png"
-              alt="my529: Educational Savings Plan Screenshot"
-              title="my529: Educational Savings Plan"
+              alt="my529: Dynamic Educational Savings Plan"
+              title="my529: Dynamic Educational Savings Plan"
               class="rounded-lg mb-4 w-full h-auto object-cover"
             />
-            <h3 class="text-white mb-2">
-              my529
-            </h3>
+            <h3 class="text-white mb-2">My529 Investment Options</h3>
             <p class="text-gray-400 text-sm mb-4">
-              Rendered data into dynamic graphs and charts using D3.js library. I then linked 
-              those graphs to input range sliders to update graph data in realtime. Best example 
-              is a quarter of the way down the page at the provided URL.
+              Rendered data into dynamic pie charts and graphs using D3.js 
+              library. Then, I linked and imported that data (the graphs the 
+              data generated, anyway) to input range sliders to dynamically 
+              update the pie chart data in realtime. Best example is a quarter 
+              of the way down the page at the provided URL.
             </p>
-            <span class="vlink inline-block hover:underline">
-              View Project &rarr;
-            </span>
+            <span class="vlink inline-block hover:underline">View Project &rarr;</span>
           </a>
         </div>
-
-        <div class="text-center mt-12">
+        <!-- <div class="text-center mt-12">
           <a
             href="#"
             class="inline-block bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-colors"
           >
             View All Portfolio Projects
           </a>
-        </div>
-      </section> <!-- END Portfolio Section -->
+        </div> -->
+      </section> <!-- END portfolio section -->
 
-      <section id="resources" class="resource-links"> <!-- Resources Section START -->
+      <section id="resources" class="resource-links">
         <div class="glass-card-container">
           <div class="space-y-6 card">
-            <h2 class="text-white">
-              Resources
-            </h2>
-
+            <h2 class="text-white">Resources</h2>
             <p>
-              A curated collection of tools, libraries, and resources I've 
-              gathered over the years - open source and free (mostly).
+              A (ever-evolving, indefinitely changing) curated collection of 
+              useful web apps. Tools, libraries, and resources I've gathered 
+              over the years - open source and free (mostly).
             </p>
 
-            <ul id="loop"></ul> <!-- Auto-populated with a list of resource links from /data/resources-list.json -->
-              
+            <ul id="loop"></ul> <!-- map() renders JSON list of resource links -->
+
             <p>
               These are genuinely valuable resources - packed with great info 
               and insights that have shaped my work. Know of any I should add? 
               I'd love to hear from you.
             </p>
           </div>
-        </div> <!-- END:</.glass-card-container> -->
-
-        <div class="accents"> <!-- "glass-card" base designed by Fabian Albert: https://www.pinterest.com/pin/1045749975969474374/ -->
+        </div>
+        <div class="accents">
           <div class="top-light"></div>
           <div class="light"></div>
           <div class="light sm"></div>
         </div>
-      </section>
-      <!-- END Resources Section -->
+      </section> <!-- END resources section -->
 
-      <!-- Skill Tech Stack Section -->
       <section id="skill-tech-stack">
-        <h4>Tech-Stack</h4>
+        <h4>Tech-Stack Recommendations</h4>
         <p>
-          Just a few technologies, programming languages, libraries, frameworks,
-          etc. I'm familiar with and use on a daily basis (I highly recommend,
-          if you'd prefer to go at it on your own).
+          Just a few programming languages, libraries, frameworks, and 
+          technologies that I highly recommend, if you'd prefer to go at it on 
+          your own.
         </p>
-
         <div class="animated-logo-slider">
-          <ul>
-            <li>
-              <img
-                src="./images/icons/icon-javascript.svg"
-                alt="JavaScript"
-                title="JavaScript"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-html5.svg"
-                alt="HTML5"
-                title="HTML5"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-css3.svg"
-                alt="CSS 3"
-                title="CSS3"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-sass.svg"
-                alt="Sass"
-                title="Sass CSS"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-json.svg"
-                alt="JSON"
-                title="JSON"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-git.svg"
-                alt="git"
-                title="git"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-github.svg"
-                alt="GitHub"
-                title="GitHub"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-jira.svg"
-                alt="Jira"
-                title="Jira"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-typescript.svg"
-                alt="TypeScript"
-                title="TypeScript"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-jquery.svg"
-                alt="jQuery"
-                title="jQuery"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-adobe.svg"
-                alt="Adobe"
-                title="Adobe"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-atlassian.svg"
-                alt="Atlassian"
-                title="Atlassian"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-confluence.svg"
-                alt="Confluence"
-                title="Confluence"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-react.svg"
-                alt="React JS"
-                title="React JS"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-angular.svg"
-                alt="Angular"
-                title="Angular"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-eslint.svg"
-                alt="ESLint"
-                title="ESLint"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-wordpress.svg"
-                alt="WordPress"
-                title="WordPress"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-jest.svg"
-                alt="Jest"
-                title="Jest"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-material-ui.svg"
-                alt="Material UI"
-                title="Material UI"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-nodejs.svg"
-                alt="Node JS"
-                title="Node JS"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-npm.svg"
-                alt="NPM"
-                title="NPM"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-php.svg"
-                alt="PHP"
-                title="PHP"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-prettier.svg"
-                alt="Prettier"
-                title="Prettier"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-redux.svg"
-                alt="Redux"
-                title="Redux"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-grunt.svg"
-                alt="Grunt"
-                title="Grunt"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-vercel.svg"
-                alt="Vercel"
-                title="Vercel"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-bitbucket.svg"
-                alt="BitBucket"
-                title="BitBucket"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-less.svg"
-                alt="Less CSS"
-                title="Less CSS"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-nextjs.svg"
-                alt="Next JS"
-                title="Next JS"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-nx.svg"
-                alt="NX"
-                title="NX"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-planet-scale.svg"
-                alt="Planet Scale"
-                title="Planet Scale"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-prisma.svg"
-                alt="Prisma"
-                title="Prisma"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-vuejs.svg"
-                alt="Vue JS"
-                title="Vue JS"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-vscode.svg"
-                alt="Visual Studio Code"
-                title="Visual Studio(VS) Code"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-sublime-text.svg"
-                alt="Sublime Text"
-                title="Sublime Text"
-              />
-            </li>
-            <li>
-              <img
-                src="./images/icons/icon-bootstrap.svg"
-                alt="Bootstrap"
-                title="Bootstrap"
-              />
-            </li>
-            <li>
-              <img
-                alt="Tailwind CSS"
-                src="./images/icons/icon-tailwind-css.svg"
-                title="Tailwind CSS"
-              />
-            </li>
-            <li>
-              <img
-                alt="T3-Stack - TypeScript, tRPC, Tailwind, Next.js"
-                src="./images/icons/icon-t3.svg"
-                title="T3-Stack: TypeScript, Tailwind, tRPC, Next.js"
-              />
-            </li>
-          </ul>
+          <ul id="sliderContainer"></ul>
         </div>
-
         <p>
           <a href="mailto:tynielsen@gmail.com">Let's build.</a>
         </p>
-      </section>
-      <!-- END Skill Tech Stack Section -->
+      </section> <!-- END skill-tech-stack section -->
 
-
-      <section id="contact" class="resource-links"> <!-- Resources Section START -->
+      <section id="contact" class="resource-links">
         <div class="glass-card-container">
           <div class="space-y-6 card">
             <h2 class="text-white">Contact</h2>
-            
             <form action="">
               <legend>
                 <div class="name-input">
-                  <label for="full-name">Full Name</label>
-                  <input type="text" name="contact-form" id="full-name" placeholder="Full Name">
+                  <label for="full-name">Name</label>
+                  <input type="text" name="contact-form" id="full-name" placeholder="Name">
                 </div>
-
                 <div class="subject-input">
                   <label for="subject">Subject</label>
-                  <input type="text" name="contact-form" id="subject" placeholder="Like To Discuss Some Consulting and Development Work From You">
+                  <input type="text" name="contact-form" id="subject" placeholder="Subject Title">
                 </div>
-
                 <div class="msg-input">
                   <label for="message">Message</label>
-                  <textarea name="contact-form" id="message" placeholder="Hi! We'd LOVE to have you help build our custom website with us. We have a team but they're shorthanded as it is and could use help with the current load. Can you come in, take a look at the project, offer up some consultation and help get this project back on track please?"></textarea>
+                  <textarea name="contact-form" id="message" placeholder="Message: &quot;Hi! Our company is looking to have someone help build our custom digital content. Can you take a look at the project and help get this project back on track.&quot;"></textarea>
                 </div>
-
                 <div class="submit-btn">
-                  <button>Submit</button>
+                  <button type="button">Submit</button>
                 </div>
               </legend>
             </form>
           </div>
         </div>
-
-        <div class="accents"> <!-- "glass-card" base designed by Fabian Albert: https://www.pinterest.com/pin/1045749975969474374/ -->
+        <div class="accents">
           <div class="top-light"></div>
           <div class="light"></div>
           <div class="light sm"></div>
         </div>
-      </section> <!-- END Contact Section -->
+      </section> <!-- END contact section -->
     </main>
 
-    <!-- Footer -->
     <footer class="bg-gray-800 text-center py-8 px-6 mt-12">
       <p class="text-gray-400 copyright">
-        &copy; <span id="c-yr"></span> Tyler Nielsen. All Rights Reserved.
+        &copy; <span id="c-yr"></span> TylerN.com, all rights reserved.
       </p>
-
       <div class="flex justify-center space-x-6 mt-4">
         <a href="https://linkedin.com/in/yourprofile" target="_blank" class="text-gray-400 hover:text-sky-400 transition-colors">
           <svg
@@ -694,10 +360,8 @@
             <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.468-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.046.138 3.003.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.614.8.575 4.767-1.589 8.205-6.085 8.205-11.385 0-6.627-5.373-12-12-12z"/>
           </svg>
         </a>
-        <!-- You can add more social links here -->
       </div>
     </footer>
-    <!-- END Footer -->
 
     <!-- <script defer>
     document.addEventListener("DOMContentLoaded", () => {
@@ -709,5 +373,7 @@
       });
     });
     </script> -->
+
+    <!-- "glass-card" based on designs by Fabian Albert: https://www.pinterest.com/pin/1045749975969474374/ -->
   </body>
 </html>

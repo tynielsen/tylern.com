@@ -2,55 +2,68 @@
   "resources": [
     {
       "name": "Tiny Wow",
-      "url": "https://tinywow.com/"
+      "url": "https://tinywow.com/",
+      "target": "_blank"
     },
     {
       "name": "CSS Tricks",
-      "url": "https://css-tricks.com/"
+      "url": "https://css-tricks.com/",
+      "target": "_blank"
     },
     {
       "name": "edX",
-      "url": "https://www.edx.org/"
+      "url": "https://www.edx.org/",
+      "target": "_blank"
     },
     {
       "name": "The Odin Project",
-      "url": "https://www.theodinproject.com/"
+      "url": "https://www.theodinproject.com/",
+      "target": "_blank"
     },
     {
       "name": "Free Code Camp",
-      "url": "https://www.freecodecamp.org/"
+      "url": "https://www.freecodecamp.org/",
+      "target": "_blank"
     },
     {
       "name": "Learn-JS",
-      "url": "https://learn-js.org/"
+      "url": "https://learn-js.org/",
+      "target": "_blank"
     },
     {
       "name": "The Modern JS Tutorial",
-      "url": "https://javascript.info/"
+      "url": "https://javascript.info/",
+      "target": "_blank"
     },
     {
       "name": "JavaScript Roadmap",
-      "url": "https://roadmap.sh/javascript"
+      "url": "https://roadmap.sh/javascript",
+      "target": "_blank"
     },
     {
       "name": "React.JS",
-      "url": "https://react.dev/learn"
+      "url": "https://react.dev/learn",
+      "target": "_blank"
     },
     {
       "name": "TypeScript w/React.JS",
-      "url": "https://www.freecodecamp.org/news/learn-typescript-with-react-handbook/"
+      "url": "https://www.freecodecamp.org/news/learn-typescript-with-react-handbook/",
+      "target": "_blank"
     },
     {
       "name": "Vue.JS",
-      "url": "https://www.freecodecamp.org/news/build-a-portfolio-with-vuejs/"
+      "url": "https://www.freecodecamp.org/news/build-a-portfolio-with-vuejs/",
+      "target": "_blank"
     },
     {
       "name": "HTML",
-      "url": "https://html.com/"
+      "url": "https://html.com/",
+      "target": "_blank"
     },
     {
       "name": "REST API Tutorial",
-      "url": "https://restapitutorial.com/"
+      "url": "https://restapitutorial.com/",
+      "target": "_blank"
     }
   ]
 }
