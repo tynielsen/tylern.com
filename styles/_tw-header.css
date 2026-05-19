@@ -1,10 +1,10 @@
 /* *************************************************************************
  *
- *  Header Element
+ *  Header element w/Tailwind
  *
 **************************************************************************** */
 header {
-  background: rgba(34, 34, 34, 0.67);
+  background: rgba(85, 85, 85, 0.60);
   backdrop-filter: blur(0.375rem);
   padding: 1rem 3rem;
   position: sticky;
@@ -25,16 +25,15 @@ header {
     /* background: linear-gradient(180deg, #292929aa 0%, #191919cc 50%); */
   }
 
-  .logo {
-    color: var(--alt-text-color);
-    font-weight: bold;
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .mobile-menu,
   .mobile-menu-button {
     display: none;
   }
 }
 
+.logo {
+  color: var(--alt-text-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}

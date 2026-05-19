@@ -67,10 +67,10 @@ h1 > span {
   z-index: 12;
 
   > fieldset {
-    background: rgba(105, 105, 105, 0.667);
+    background: rgba(34, 34, 34, 0.67);
     color: var(--text-color);
-    padding: 1rem 1.5rem 1rem 3.75rem;
     width: fit-content;
+    padding: 0.25rem 1.5rem 1rem 3.75rem;
     /* Flex Settings */
     align-items: center;
     display: flex;
@@ -100,7 +100,7 @@ h1 > span {
 
 .theme-picker input[type="radio"] {
   &#default {
-    --radio-color: #999;
+    --radio-color: var(--black);
   }
 
   &#pink {

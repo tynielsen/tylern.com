@@ -1,8 +1,8 @@
-/* **********************************************************
+/* *************************************************************************
  *
- *  Nav, globally shared betwixt header & footer nav els
+ *  Nav element, shared betwixt header & footer elements
  *
-************************************************************* */
+**************************************************************************** */
 nav {
   display: inline-flex;
   justify-content: space-between;
@@ -81,7 +81,7 @@ nav {
       opacity: 0;
       position: absolute;
       right: 0.25rem;
-      transition: all 100ms ease-in-out;
+      transition: bottom 250ms ease-in-out;
     }
 
     &:hover {
@@ -92,7 +92,7 @@ nav {
 
       &::after {
         opacity: 1;
-        bottom: -0.4rem;
+        bottom: -0.125rem;
       }
     }
   }
