@@ -3,64 +3,67 @@
  *  Notary Page
  *
 ************************************************************* */
-section.hero {
-  --top-light-color: var(--neon-blue);
-  scroll-margin-top: 200px;
+.notary-info {
 
-  h1 {
-    color: #FCFCFE;
-    text-shadow: none;
-    margin: 0 0 2rem;
+  section.hero {
+    --top-light-color: var(--neon-blue);
+    scroll-margin-top: 200px;
+
+    h1 {
+      color: #FCFCFE;
+      text-shadow: none;
+      margin: 0 0 2rem;
+    }
+
+    p {
+      line-height: 1.5;
+      font-weight: 700;
+      text-size-adjust: 100%;
+    }
   }
 
-  p {
-    line-height: 1.5;
-    font-weight: 700;
-    text-size-adjust: 100%;
-  }
-}
+  section.notary-cert,
+  section.notary-prep {
+    position: relative;
 
-section.notary-cert,
-section.notary-prep {
-  position: relative;
+    ul {
+      list-style-type: disc;
+      margin-left: 1rem;
+      padding-left: 0.5rem;
 
-  ul {
-    list-style-type: disc;
-    margin-left: 1rem;
-    padding-left: 0.5rem;
+      li {
+        margin-bottom: 1rem;
 
-    li {
-      margin-bottom: 1rem;
+        a {
+          color: var(--secondary-text-color);
+          font-weight: 700;
 
-      a {
-        color: var(--secondary-text-color);
-        font-weight: 700;
-
-        &:hover {
-          text-decoration: underline;
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
   }
-}
 
-.accentColor {
-  color: hsl(var(--teal));
-}
+  .accentColor {
+    color: hsl(var(--teal));
+  }
 
-/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––————————————————
-  @Section: Neon Light Card
-–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––————————————— */
-.accents {
+  /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––————————————————
+    @Section: Neon Light Card
+  –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––————————————— */
+  .accents {
 
-  .top-light {
-    background: rgb(255, 254, 249);
-    /* Green, Pink, Blue, Orange */
-    box-shadow: 
-      0 0px 1px 1px #f700ff,
-      0 1px 2px 1px #f700ff77,
-      0 2px 6px 1px #f700ff77,
-      0 4px 12px 0px #f700ff99,
-      0 12px 20px 12px #f700ff44;
+    .top-light {
+      background: rgb(255, 254, 249);
+      /* Green, Pink, Blue, Orange */
+      box-shadow: 
+        0 0px 1px 1px #f700ff,
+        0 1px 2px 1px #f700ff77,
+        0 2px 6px 1px #f700ff77,
+        0 4px 12px 0px #f700ff99,
+        0 12px 20px 12px #f700ff44;
+    }
   }
 }

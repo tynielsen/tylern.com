@@ -7,10 +7,11 @@
   background: var(--white-alt-1);
   border: 1px solid var(--black);
   border-radius: 0.25rem ;
-  color: var(--black-alt-1);
+  color: hsl(var(--black-alt-1));
   padding: 4rem;
   margin: 2rem auto 0;
   box-shadow: 2px 8px 6px 2px rgba(0, 0, 0, 0.4);
+  width: 90%;
 
   section {
     margin: 1rem 0 0;
@@ -112,4 +113,28 @@
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––————————————————
  *  @Section: Skills
 –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––————————————— */
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+
+    li {
+      margin-right: 1.5rem;
+      line-height: 1.5;
+
+      &:last-child {
+        border-right: none;
+      }
+
+      a {
+        display: inline-flex;
+        font-weight: 600;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }

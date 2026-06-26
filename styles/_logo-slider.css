@@ -6,10 +6,10 @@
 
 /* Animated Logo Slider */
 .animated-logo-slider {
-  background-color: rgba(255, 255, 255, 0.25);
-  /* background-color: #e5e7eb; */
-  /* box-shadow: 0 0 12px 6px #e5e7eb; */
-  border-radius: 1.25rem;
+  /*background-color: var(--bg-color); */
+  /*background-color: #e5e7eb; */
+  /*box-shadow: 0 0 12px 6px #e5e7eb; */
+  /*border-radius: 1.25rem;*/
   overflow: hidden;
   padding: 1rem 0;
   position: relative;
@@ -27,21 +27,23 @@
     z-index: 2;
   }
 
-  &::before {
-    background: linear-gradient(to left, rgba(255, 255, 255, 0), rgba(255, 199, 142, 0.8) 95%, rgba(255, 255, 255, 1) 100%);
-    left: 0;
-  }
+  /*&::before {*/
+  /*  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 100%);*/
+  /*  left: 0;*/
+  /*}*/
 
-  &::after {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 199, 142, 0.8) 95%, rgba(255, 255, 255, 1) 100%);
-    right: 0;
-  }
+  /*&::after {*/
+  /*  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 100%);*/
+  /*  right: 0;*/
+  /*}*/
 
   ul {
     animation: 45s slide infinite linear;
-    display: inline-block;
+    display: flex;
     list-style: none;
     margin: 0;
+    justify-content: flex-start;
+    align-items: center;
 
     &:hover {
       animation-play-state: paused;
@@ -49,10 +51,11 @@
 
     li {
       display: inline-block;
-      margin: 0 1.5rem;
+      margin: 0 4rem 0 0;
 
       img {
         height: 4rem;
+        max-width: inherit;
       }
     }
   }

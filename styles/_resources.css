@@ -5,12 +5,17 @@
 ************************************************************* */
 section#resources {
   position: relative;
+  
+  .card {
+    box-shadow: inset 0 2px 2px 0 #f700ff44, inset 0 -2px 2px 0 #0003;
+  }
 
   .resource-links {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1rem 2rem;
+
 
     li {
       flex-grow: 1;

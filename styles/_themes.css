@@ -4,17 +4,18 @@
  *
 ************************************************************* */
 :root:has(#default:checked) {
-  --bg-color: var(--white-alt-1);
+  --bg-color: hsl(var(--black-alt-1));
   --text-color: var(--primary-text-color);
-  --alt-text-color: var(--tropical-punch-4);
+  --alt-text-color: var(--turquoise);
   --secondary-text-color: var(--blue);
-  --selection-highlight-color: var(--hot-pink);
+  --selection-highlight-color: var(--turquoise);
+  --gradient-color: var(--black-alt-1);
 
   --main-accent-color: var(--blue-bg-color-rgb);
 }
 
 :root:has(#pink:checked) {
-  --bg-color: var(--blue);
+  --bg-color: hsla(199, 89%, 8%, 1);
   --text-color: var(--primary-text-color);
   --alt-text-color: var(--hot-pink);
   --secondary-text-color: var(--hot-pink);
@@ -28,11 +29,11 @@
 }
 
 :root:has(#blue:checked) {
-  --bg-color: var(--hot-pink);
+  --bg-color: hsla(330, 100%, 8%, 1);
   --text-color: var(--primary-text-color);
   --alt-text-color: var(--tropical-punch-4);
   --secondary-text-color: var(--blue);
-  --selection-highlight-color: var(--turquoise);
+  --selection-highlight-color: var(--tropical-punch-4);
 
   --main-accent-color: var(--pink-bg-color-rgb);
   
@@ -43,14 +44,14 @@
 }
 
 :root:has(#green:checked) {
-  --bg-color: var(--electric-pop-2);
+  --bg-color: hsl(269, 97%, 16%);
   --dark-oj: rgb(190, 85, 0);
   /* --bg-color: rgb(140, 45, 0); */
   --text-color: var(--primary-text-color);
   --alt-text-color: var(--tropical-punch-3-1);
   --secondary-text-color: var(--green);
   --secondary-text-color-rgb: rgba(0, 255, 0, 0.12);
-  --selection-highlight-color: lime;
+  --selection-highlight-color: var(--tropical-punch-3-1);
 
   --main-accent-color: var(--green-bg-color-rgb);
   /* hsl(from var(--secondary-text-color) h s calc(l + 16)); */
@@ -65,7 +66,7 @@
 }
 
 :root:has(#orange:checked) {
-  --bg-color: var(--green-glow-5);
+  --bg-color: hsl(122, 90%, 9%);
   /* --bg-color: hsl(2, 90%, 16%); dark burgundy */
   --text-color: var(--primary-text-color);
   --alt-text-color: var(--tropical-punch-5);

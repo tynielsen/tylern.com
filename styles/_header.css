@@ -4,7 +4,7 @@
  *
 **************************************************************************** */
 header {
-  background: rgba(34, 34, 34, 0.67);
+  background: var(--transparent-black-bg);
   backdrop-filter: blur(0.375rem);
   padding: 1rem 3rem;
   position: sticky;
